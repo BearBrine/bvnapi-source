@@ -39,6 +39,25 @@ package net.play5d.game.bvn.fighter.ctrler
       public function getFighterMc() : FighterMC {}
       
       public function getCurAction() : String {}
+
+      /**
+       * <p>获取人物动作控制器,用于获取玩家或AI执行了什么动作（类似检测按下的按键但并不完全是）。</p>
+       * 
+       * <p><b>注意：</b>此方法在 BVN 3.3 版本中无效，请注意适用的版本！</p>
+       * 
+       * @return IFighterActionCtrl 人物动作控制器对象。
+       * 
+       * @since BVN 3.5，ZNB 1.0
+       * 
+       * @see FighterKeyCtrl
+       * @see FighterAICtrl
+       * 
+       * @example 使用方法
+       * <listing version="3.0">
+       * parent.$mc_ctrler.getActionCtrler()
+       * </listing>
+       */
+      public function getActionCtrler() : IFighterActionCtrl {}
       
       public function setActionCtrler(param1:IFighterActionCtrl) : void {}
       
