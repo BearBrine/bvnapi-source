@@ -25,9 +25,9 @@ package net.play5d.game.bvn.ui
       
       public static function showingDialog() : Boolean {}
       
-      public static function confrim(param1:String = null, param2:String = null, param3:Function = null, param4:Function = null) : void {}
+      public static function confrim(enMsg:String = null, cnMsg:String = null, yes:Function = null, no:Function = null) : void {}
       
-      public static function alert(param1:String = null, param2:String = null, param3:Function = null) : void {}
+      public static function alert(enMsg:String = null, cnMsg:String = null, close:Function = null) : void {}
       
       public static function closeAlert() : void {}
       
@@ -37,7 +37,7 @@ package net.play5d.game.bvn.ui
       
       public function getUIDisplay() : DisplayObject {}
       
-      public function initFight(param1:GameRunFighterGroup, param2:GameRunFighterGroup) : void {}
+      public function initFight(p1:GameRunFighterGroup, p2:GameRunFighterGroup) : void {}
       
       public function render() : void {}
       

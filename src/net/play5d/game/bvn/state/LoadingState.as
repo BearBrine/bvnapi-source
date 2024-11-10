@@ -47,14 +47,14 @@ package net.play5d.game.bvn.state
       
       public function getSort() : Array {}
       
-      public function setOrder(param1:int, param2:Array) : void {}
+      public function setOrder(player:int, v:Array) : void {}
       
       public function build() : void {}
       
-      public function gotoGame(param1:Array, param2:Array) : void {}
+      public function gotoGame(sort1:Array, sort2:Array) : void {}
       
       public function afterBuild() : void {}
       
-      public function destory(param1:Function = null) : void {}
+      public function destory(back:Function = null) : void {}
    }
 }

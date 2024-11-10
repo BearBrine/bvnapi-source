@@ -61,19 +61,19 @@ package net.play5d.game.bvn.fighter
       
       public var targetTeams:Vector.<TeamVO>;
       
-      public function FighterMain(param1:MovieClip) {}
+      public function FighterMain(mainMc:MovieClip) {}
       
       public function get colorTransform() : ColorTransform {}
       
-      public function set colorTransform(param1:ColorTransform) : void {}
+      public function set colorTransform(v:ColorTransform) : void {}
       
-      public function changeColor(param1:ColorTransform) : void {}
+      public function changeColor(v:ColorTransform) : void {}
       
       public function resumeColor() : void {}
       
-      override public function destory(param1:Boolean = true) : void {}
+      override public function destory(dispose:Boolean = true) : void {}
       
-      override public function set attackRate(param1:Number) : void {}
+      override public function set attackRate(value:Number) : void {}
       
       public function currentHurtDamage() : int {}
       
@@ -93,7 +93,7 @@ package net.play5d.game.bvn.fighter
       
       public function getMC() : FighterMC {}
       
-      public function setActionCtrl(param1:IFighterActionCtrl) : void {}
+      public function setActionCtrl(ctrler:IFighterActionCtrl) : void {}
       
       public function initlize() : void {}
       
@@ -107,17 +107,17 @@ package net.play5d.game.bvn.fighter
       
       override public function getBodyArea() : Rectangle {}
       
-      override public function hit(param1:HitVO, param2:IGameSprite) : void {}
+      override public function hit(hitvo:HitVO, target:IGameSprite) : void {}
       
-      override public function beHit(param1:HitVO, param2:Rectangle = null) : void {}
+      override public function beHit(hitvo:HitVO, hitRect:Rectangle = null) : void {}
       
-      public function hasEnergy(param1:Number, param2:Boolean = false) : Boolean {}
+      public function hasEnergy(v:Number, allowOverflow:Boolean = false) : Boolean {}
       
-      public function useEnergy(param1:Number) : void {}
+      public function useEnergy(v:Number) : void {}
       
-      public function useQi(param1:Number) : Boolean {}
+      public function useQi(v:Number) : Boolean {}
       
-      public function addQi(param1:Number) : void {}
+      public function addQi(v:Number) : void {}
       
       public function sayIntro() : void {}
       
@@ -127,7 +127,7 @@ package net.play5d.game.bvn.fighter
       
       public function lose() : void {}
       
-      public function getHitRange(param1:String) : Rectangle {}
+      public function getHitRange(id:String) : Rectangle {}
       
       public function energyExplode() : void {}
       

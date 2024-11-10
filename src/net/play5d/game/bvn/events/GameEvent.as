@@ -37,12 +37,12 @@ package net.play5d.game.bvn.events
       
       public var param:*;
       
-      public function GameEvent(param1:String, param2:* = null, param3:Boolean = false, param4:Boolean = false) {}
+      public function GameEvent(type:String, param:* = null, bubbles:Boolean = false, cancelable:Boolean = false) {}
       
-      public static function dispatchEvent(param1:String, param2:* = null, param3:Boolean = false, param4:Boolean = false) : void {}
+      public static function dispatchEvent(type:String, param:* = null, bubbles:Boolean = false, cancelable:Boolean = false) : void {}
       
-      public static function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void {}
+      public static function addEventListener(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false) : void {}
       
-      public static function removeEventListener(param1:String, param2:Function, param3:Boolean = false) : void {}
+      public static function removeEventListener(type:String, listener:Function, useCapture:Boolean = false) : void {}
    }
 }

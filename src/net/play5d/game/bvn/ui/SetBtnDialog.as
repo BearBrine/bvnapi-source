@@ -18,7 +18,7 @@ package net.play5d.game.bvn.ui
       
       public function SetBtnDialog() {}
       
-      public function show(param1:String, param2:String) : void {}
+      public function show(name:String, cn:String) : void {}
       
       public function hide() : void {}
    }

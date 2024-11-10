@@ -30,48 +30,48 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function getSelf() : Assister {}
       
-      public function setApplyG(param1:Boolean) : void {}
+      public function setApplyG(v:Boolean) : void {}
       
-      public function finish(param1:Boolean = true) : void {}
+      public function finish(showEffect:Boolean = true) : void {}
       
-      public function defineAction(param1:String, param2:Object) : void {}
+      public function defineAction(id:String, obj:Object) : void {}
       
       public function get owner_mc_ctrler() : FighterMcCtrler {}
       
       public function get owner_fighter_ctrler() : FighterCtrler {}
       
-      public function initAssister(param1:Assister) : void {}
+      public function initAssister(assister:Assister) : void {}
       
       public function endAct() : void {}
       
       public function render() : void {}
       
-      public function moveToTarget(param1:Object = null, param2:Object = null, param3:Boolean = true) : void {}
+      public function moveToTarget(x:Object = null, y:Object = null, setDirect:Boolean = true) : void {}
       
       public function setDirectToTarget() : void {}
       
-      public function move(param1:Number = 0, param2:Number = 0) : void {}
+      public function move(x:Number = 0, y:Number = 0) : void {}
       
-      public function damping(param1:Number = 0, param2:Number = 0) : void {}
+      public function damping(x:Number = 0, y:Number = 0) : void {}
       
       public function stop() : void {}
       
-      public function gotoAndPlay(param1:String) : void {}
+      public function gotoAndPlay(frame:String) : void {}
       
-      public function gotoAndStop(param1:String) : void {}
+      public function gotoAndStop(frame:String) : void {}
       
-      public function setTouchFloor(param1:String) : void {}
+      public function setTouchFloor(frame:String) : void {}
       
-      public function justHit(param1:String, param2:String = null, param3:Boolean = false) : Boolean {}
+      public function justHit(hitId:String, playFrame:String = null, includeDefense:Boolean = false) : Boolean {}
       
-      public function setHitTarget(param1:String, param2:String) : void {}
+      public function setHitTarget(checker:String, action:String) : void {}
       
       public function removeSelf() : void {}
       
-      public function fire(param1:String, param2:Object = null) : void {}
+      public function fire(mcName:String, params:Object = null) : void {}
       
-      public function addAttacker(param1:String, param2:Object = null) : void {}
+      public function addAttacker(mcName:String, params:Object = null) : void {}
       
-      public function checkHitOwner(param1:String) : Boolean {}
+      public function checkHitOwner(mcName:String) : Boolean {}
    }
 }

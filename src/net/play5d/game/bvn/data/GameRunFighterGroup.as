@@ -25,7 +25,7 @@ package net.play5d.game.bvn.data
       
       public function getNextFighter() : FighterMain {}
       
-      public function destoryFighters(param1:FighterMain) : void {}
+      public function destoryFighters(expect:FighterMain) : void {}
       
       public function removeCurrentFighter() : void {}
    }

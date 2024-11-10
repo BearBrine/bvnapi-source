@@ -30,31 +30,31 @@ package net.play5d.game.bvn.ctrl
       
       public function GameLogic() {}
       
-      public static function initGameLogic(param1:MapMain, param2:GameCamera) : void {}
+      public static function initGameLogic(map:MapMain, camera:GameCamera) : void {}
       
       public static function clear() : void {}
       
-      public static function isInAir(param1:BaseGameSprite) : Boolean {}
+      public static function isInAir(target:BaseGameSprite) : Boolean {}
       
-      public static function isTouchBottomFloor(param1:IGameSprite) : Boolean {}
+      public static function isTouchBottomFloor(target:IGameSprite) : Boolean {}
       
-      public static function isOutRange(param1:IGameSprite) : Boolean {}
+      public static function isOutRange(target:IGameSprite) : Boolean {}
       
-      public static function addHits(param1:Object, param2:Object, param3:int) : int {}
+      public static function addHits(id:Object, targetID:Object, uiID:int) : int {}
       
-      public static function clearHits(param1:Object) : void {}
+      public static function clearHits(id:Object) : void {}
       
-      public static function getHitsObj(param1:Object) : Object {}
+      public static function getHitsObj(id:Object) : Object {}
       
-      public static function getHitsObjByTargetId(param1:Object) : Object {}
+      public static function getHitsObjByTargetId(id:Object) : Object {}
       
-      public static function clearHitsByTargetId(param1:Object) : void {}
+      public static function clearHitsByTargetId(id:Object) : void {}
       
-      public static function checkFighterDie(param1:FighterMain) : Boolean {}
+      public static function checkFighterDie(v:FighterMain) : Boolean {}
       
-      public static function hitTarget(param1:HitVO, param2:IGameSprite, param3:IGameSprite) : void {}
+      public static function hitTarget(hitvo:HitVO, attacker:IGameSprite, target:IGameSprite) : void {}
       
-      public static function addScoreByHitTarget(param1:HitVO) : void {}
+      public static function addScoreByHitTarget(hitvo:HitVO) : void {}
       
       public static function addScoreByKO() : void {}
       
@@ -62,16 +62,16 @@ package net.play5d.game.bvn.ctrl
       
       public static function loseScoreByContinue() : void {}
       
-      public static function fixGameSpritePosition(param1:IGameSprite) : void {}
+      public static function fixGameSpritePosition(sp:IGameSprite) : void {}
       
-      public static function resetFighterHP(param1:FighterMain) : void {}
+      public static function resetFighterHP(v:FighterMain) : void {}
       
-      public static function setMessionEnemyAttack(param1:FighterMain) : void {}
+      public static function setMessionEnemyAttack(v:FighterMain) : void {}
       
-      public static function canSelectFighter(param1:String) : Boolean {}
+      public static function canSelectFighter(id:String) : Boolean {}
       
-      public static function canSelectAssist(param1:String) : Boolean {}
+      public static function canSelectAssist(id:String) : Boolean {}
       
-      public static function setGameMode(param1:int) : void {}
+      public static function setGameMode(v:int) : void {}
    }
 }

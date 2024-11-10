@@ -14,13 +14,13 @@ package fl.motion
       
       public function ColorMatrix() {}
       
-      public function SetBrightnessMatrix(param1:Number) : void {}
+      public function SetBrightnessMatrix(value:Number) : void {}
       
-      public function SetContrastMatrix(param1:Number) : void {}
+      public function SetContrastMatrix(value:Number) : void {}
       
-      public function SetSaturationMatrix(param1:Number) : void {}
+      public function SetSaturationMatrix(value:Number) : void {}
       
-      public function SetHueMatrix(param1:Number) : void {}
+      public function SetHueMatrix(angle:Number) : void {}
       
       public function GetFlatArray() : Array {}
    }

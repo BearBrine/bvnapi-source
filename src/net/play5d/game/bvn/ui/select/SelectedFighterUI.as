@@ -23,19 +23,19 @@ package net.play5d.game.bvn.ui.select
       
       public var trueY:Number = 0;
       
-      public function SelectedFighterUI(param1:Sprite) {}
+      public function SelectedFighterUI(ui:Sprite) {}
       
-      public function mouseEnabled(param1:Boolean) : void {}
+      public function mouseEnabled(v:Boolean) : void {}
       
       public function destory() : void {}
       
-      public function setFighter(param1:FighterVO) : void {}
+      public function setFighter(vo:FighterVO) : void {}
       
       public function getFighter() : FighterVO {}
       
       public function getFighterIndex() : int {}
       
-      public function setFighterIndex(param1:int) : void {}
+      public function setFighterIndex(index:int) : void {}
       
       public function setAssister() : void {}
    }

@@ -40,15 +40,15 @@ package net.play5d.game.bvn.data
       
       public function ConfigVO() {}
       
-      public function setDefaultConfig(param1:KeyConfigVO) : void {}
+      public function setDefaultConfig(keyConfig:KeyConfigVO) : void {}
       
       public function toSaveObj() : Object {}
       
-      public function readSaveObj(param1:Object) : void {}
+      public function readSaveObj(o:Object) : void {}
       
-      public function getValueByKey(param1:String) : * {}
+      public function getValueByKey(key:String) : * {}
       
-      public function setValueByKey(param1:String, param2:*) : void {}
+      public function setValueByKey(key:String, value:*) : void {}
       
       public function applyConfig() : void {}
    }

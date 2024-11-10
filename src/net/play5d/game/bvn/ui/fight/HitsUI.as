@@ -9,11 +9,11 @@ package net.play5d.game.bvn.ui.fight
    public class HitsUI
    {
       
-      public function HitsUI(param1:*) {} //hits_mc
+      public function HitsUI(mc:*) {} //hits_mc
       
       public function destory() : void {}
       
-      public function show(param1:int) : void {}
+      public function show(num:int) : void {}
       
       public function hide() : void {}
    }

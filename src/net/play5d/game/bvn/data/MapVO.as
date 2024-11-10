@@ -18,6 +18,6 @@ package net.play5d.game.bvn.data
       
       public function MapVO() {}
       
-      public function initByXML(param1:XML) : void {}
+      public function initByXML(xml:XML) : void {}
    }
 }

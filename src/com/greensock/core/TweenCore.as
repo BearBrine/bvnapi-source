@@ -56,7 +56,7 @@ package com.greensock.core
       
       public var data:*;
       
-      public function TweenCore(param1:Number = 0, param2:Object = null) {}
+      public function TweenCore(duration:Number = 0, vars:Object = null) {}
       
       public function play() : void {}
       
@@ -64,54 +64,54 @@ package com.greensock.core
       
       public function resume() : void {}
       
-      public function restart(param1:Boolean = false, param2:Boolean = true) : void {}
+      public function restart(includeDelay:Boolean = false, suppressEvents:Boolean = true) : void {}
       
-      public function reverse(param1:Boolean = true) : void {}
+      public function reverse(forceResume:Boolean = true) : void {}
       
-      public function renderTime(param1:Number, param2:Boolean = false, param3:Boolean = false) : void {}
+      public function renderTime(time:Number, suppressEvents:Boolean = false, force:Boolean = false) : void {}
       
-      public function complete(param1:Boolean = false, param2:Boolean = false) : void {}
+      public function complete(skipRender:Boolean = false, suppressEvents:Boolean = false) : void {}
       
       public function invalidate() : void {}
       
-      public function setEnabled(param1:Boolean, param2:Boolean = false) : Boolean {}
+      public function setEnabled(enabled:Boolean, ignoreTimeline:Boolean = false) : Boolean {}
       
       public function kill() : void {}
       
-      protected function setDirtyCache(param1:Boolean = true) : void {}
+      protected function setDirtyCache(includeSelf:Boolean = true) : void {}
       
-      protected function setTotalTime(param1:Number, param2:Boolean = false) : void {}
+      protected function setTotalTime(time:Number, suppressEvents:Boolean = false) : void {}
       
       public function get delay() : Number {}
       
-      public function set delay(param1:Number) : void {}
+      public function set delay(n:Number) : void {}
       
       public function get duration() : Number {}
       
-      public function set duration(param1:Number) : void {}
+      public function set duration(n:Number) : void {}
       
       public function get totalDuration() : Number {}
       
-      public function set totalDuration(param1:Number) : void {}
+      public function set totalDuration(n:Number) : void {}
       
       public function get currentTime() : Number {}
       
-      public function set currentTime(param1:Number) : void {}
+      public function set currentTime(n:Number) : void {}
       
       public function get totalTime() : Number {}
       
-      public function set totalTime(param1:Number) : void {}
+      public function set totalTime(n:Number) : void {}
       
       public function get startTime() : Number {}
       
-      public function set startTime(param1:Number) : void {}
+      public function set startTime(n:Number) : void {}
       
       public function get reversed() : Boolean {}
       
-      public function set reversed(param1:Boolean) : void {}
+      public function set reversed(b:Boolean) : void {}
       
       public function get paused() : Boolean {}
       
-      public function set paused(param1:Boolean) : void {}
+      public function set paused(b:Boolean) : void {}
    }
 }

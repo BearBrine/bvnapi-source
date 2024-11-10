@@ -9,10 +9,10 @@ package net.play5d.game.bvn.ui.fight
    public class FightFaceUI
    {
       
-      public function FightFaceUI(param1:*) {} //hpbar_facemc
+      public function FightFaceUI(ui:*) {} //hpbar_facemc
       
-      public function setData(param1:FighterVO) : void {}
+      public function setData(v:FighterVO) : void {}
       
-      public function setDirect(param1:int) : void {}
+      public function setDirect(v:int) : void {}
    }
 }

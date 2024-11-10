@@ -144,7 +144,7 @@ package net.play5d.game.bvn
       
       public function GameConfig() {}
       
-      public static function setGameFps(param1:int) : void {}
+      public static function setGameFps(v:int) : void {}
       
       public static function get SPEED_PLUS_DEFAULT() : Number {}
    }

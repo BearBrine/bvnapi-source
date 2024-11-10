@@ -29,10 +29,10 @@ package net.play5d.kyo.loader
       
       public function KyoURLoader() {}
       
-      public static function load(param1:String, param2:Function, param3:Function = null, param4:Object = null) : void {}
+      public static function load(url:String, back:Function, failBack:Function = null, param:Object = null) : void {}
       
-      public static function post(param1:String, param2:Object, param3:Function = null, param4:Function = null) : void {}
+      public static function post(url:String, data:Object, back:Function = null, failBack:Function = null) : void {}
       
-      public static function getFileType(param1:ByteArray) : String {}
+      public static function getFileType(fileData:ByteArray) : String {}
    }
 }

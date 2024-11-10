@@ -34,7 +34,7 @@ package net.play5d.game.bvn.data
       
       public static function isVsPeople() : Boolean {}
       
-      public static function isVsCPU(param1:Boolean = true) : Boolean {}
+      public static function isVsCPU(includeTraining:Boolean = true) : Boolean {}
       
       public static function isAcrade() : Boolean {}
    }

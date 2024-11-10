@@ -122,6 +122,6 @@ package net.play5d.kyo.input
       
       public function KyoKeyCode() {}
       
-      public static function code2name(param1:int) : String {}
+      public static function code2name(code:int) : String {}
    }
 }

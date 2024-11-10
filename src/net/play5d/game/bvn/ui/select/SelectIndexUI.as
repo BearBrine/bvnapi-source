@@ -24,9 +24,9 @@ package net.play5d.game.bvn.ui.select
       
       public function getP2Order() : Array {}
       
-      public function setP1Order(param1:Array) : void {}
+      public function setP1Order(v:Array) : void {}
       
-      public function setP2Order(param1:Array) : void {}
+      public function setP2Order(v:Array) : void {}
       
       public function p1Finish() : Boolean {}
       

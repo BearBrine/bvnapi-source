@@ -46,14 +46,14 @@ package net.play5d.game.bvn.fighter
       
       public function FighterActionState() {}
       
-      public static function isAllowWinState(param1:int) : Boolean {}
+      public static function isAllowWinState(v:int) : Boolean {}
       
-      public static function isBishaIng(param1:int) : Boolean {}
+      public static function isBishaIng(v:int) : Boolean {}
       
-      public static function isAttacking(param1:int) : Boolean {}
+      public static function isAttacking(v:int) : Boolean {}
       
-      public static function allowGhostStep(param1:int) : Boolean {}
+      public static function allowGhostStep(v:int) : Boolean {}
       
-      public static function isHurting(param1:int) : Boolean {}
+      public static function isHurting(v:int) : Boolean {}
    }
 }

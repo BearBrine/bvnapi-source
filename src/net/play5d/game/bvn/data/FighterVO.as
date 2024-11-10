@@ -38,7 +38,7 @@ package net.play5d.game.bvn.data
       
       public function FighterVO() {}
       
-      public function initByXML(param1:XML) : void {}
+      public function initByXML(xml:XML) : void {}
       
       public function getRandSay() : String {}
       

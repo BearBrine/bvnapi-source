@@ -53,19 +53,19 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public static function get I() : GameCtrl {}
       
-      public function getAttacker(param1:String, param2:int) : FighterAttacker {}
+      public function getAttacker(name:String, team:int) : FighterAttacker {}
       
-      public function setRenderHit(param1:Boolean) : void {}
+      public function setRenderHit(v:Boolean) : void {}
       
-      public function initlize(param1:GameState) : void {}
+      public function initlize(gameState:GameState) : void {}
       
       public function destory() : void {}
       
-      public function getEnemyTeam(param1:IGameSprite) : TeamVO {}
+      public function getEnemyTeam(sp:IGameSprite) : TeamVO {}
       
-      public function addGameSprite(param1:int, param2:IGameSprite, param3:int = -1) : void {}
+      public function addGameSprite(teamId:int, sp:IGameSprite, index:int = -1) : void {}
       
-      public function removeGameSprite(param1:IGameSprite, param2:Boolean = false) : void {}
+      public function removeGameSprite(sp:IGameSprite, dispose:Boolean = false) : void {}
       
       public function startGame() : void {}
       
@@ -75,17 +75,17 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public function fightFinish() : void {}
       
-      public function pause(param1:Boolean = false) : void {}
+      public function pause(pauseUI:Boolean = false) : void {}
       
-      public function resume(param1:Boolean = false) : void {}
+      public function resume(resumeUI:Boolean = false) : void {}
       
-      public function gameEnd(param1:FighterMain, param2:FighterMain) : void {}
+      public function gameEnd(winner:FighterMain, loser:FighterMain) : void {}
       
-      public function doGameEnd(param1:FighterMain, param2:FighterMain) : void {}
+      public function doGameEnd(winner:FighterMain, loser:FighterMain) : void {}
       
       public function drawGame() : void {}
       
-      public function slow(param1:Number) : void {}
+      public function slow(rate:Number) : void {}
       
       public function slowResume() : void {}
    }

@@ -29,7 +29,7 @@ package net.play5d.game.bvn.ui
       
       public function getUI() : DisplayObject {}
       
-      public function setKey(param1:KeyConfigVO) : void {}
+      public function setKey(v:KeyConfigVO) : void {}
       
       public function fadIn() : void {}
       

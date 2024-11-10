@@ -9,13 +9,13 @@ package net.play5d.game.bvn.ui.fight
    public class FighterHpBar
    {
       
-      public function FighterHpBar(param1:*) {} //hpbar_barmc
+      public function FighterHpBar(ui:*) {} //hpbar_barmc
       
       public function get ui() : DisplayObject {}
       
       public function destory() : void {}
       
-      public function setFighter(param1:FighterMain) : void {}
+      public function setFighter(v:FighterMain) : void {}
       
       public function render() : void {}
    }

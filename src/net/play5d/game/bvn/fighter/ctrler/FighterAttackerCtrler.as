@@ -19,7 +19,7 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public var ownerMc:FighterMcCtrler;
       
-      public function FighterAttackerCtrler(param1:FighterAttacker) {}
+      public function FighterAttackerCtrler(attacker:FighterAttacker) {}
       
       public function get owner_mc_ctrler() : FighterMcCtrler {}
       
@@ -33,28 +33,28 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function stopFollowTarget() : void {}
       
-      public function moveToTarget(param1:Number = NaN, param2:Number = NaN) : void {}
+      public function moveToTarget(offsetX:Number = NaN, offsetY:Number = NaN) : void {}
       
-      public function move(param1:Number = 0, param2:Number = 0) : void {}
+      public function move(x:Number = 0, y:Number = 0) : void {}
       
-      public function damping(param1:Number = 0, param2:Number = 0) : void {}
+      public function damping(x:Number = 0, y:Number = 0) : void {}
       
       public function stop() : void {}
       
-      public function gotoAndPlay(param1:String) : void {}
+      public function gotoAndPlay(frame:String) : void {}
       
-      public function gotoAndStop(param1:String) : void {}
+      public function gotoAndStop(frame:String) : void {}
       
-      public function setTouchFloor(param1:String) : void {}
+      public function setTouchFloor(frame:String) : void {}
       
-      public function justHit(param1:String) : Boolean {}
+      public function justHit(hitId:String) : Boolean {}
       
-      public function setHitTarget(param1:String, param2:String) : void {}
+      public function setHitTarget(checker:String, action:String) : void {}
       
-      public function setCrossMap(param1:Boolean) : void {}
+      public function setCrossMap(v:Boolean) : void {}
       
       public function removeSelf() : void {}
       
-      public function fire(param1:String, param2:Object = null) : void {}
+      public function fire(mcName:String, params:Object = null) : void {}
    }
 }

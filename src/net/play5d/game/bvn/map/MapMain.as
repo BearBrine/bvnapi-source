@@ -45,11 +45,11 @@ package net.play5d.game.bvn.map
       
       public var gameState:GameState;
       
-      public function MapMain(param1:Sprite) {}
+      public function MapMain(mapmc:Sprite) {}
       
       public function destory() : void {}
       
-      public function setVisible(param1:Boolean) : void {}
+      public function setVisible(v:Boolean) : void {}
       
       public function initlize() : void {}
       
@@ -57,8 +57,8 @@ package net.play5d.game.bvn.map
       
       public function getMapBottomDistance() : Number {}
       
-      public function getFloorHitTest(param1:Number, param2:Number, param3:Number) : FloorVO {}
+      public function getFloorHitTest(x:Number, y:Number, speed:Number) : FloorVO {}
       
-      public function render(param1:Number, param2:Number, param3:Number) : void {}
+      public function render(gameX:Number, gameY:Number, zoom:Number) : void {}
    }
 }

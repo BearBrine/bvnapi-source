@@ -11,12 +11,12 @@ package net.play5d.game.bvn.utils
       
       public function KeyBoarder() {}
       
-      public static function initlize(param1:Stage) : void {}
+      public static function initlize(stage:Stage) : void {}
       
       public static function focus() : void {}
       
-      public static function listen(param1:Function) : void {}
+      public static function listen(handler:Function) : void {}
       
-      public static function unListen(param1:Function) : void {}
+      public static function unListen(handler:Function) : void {}
    }
 }

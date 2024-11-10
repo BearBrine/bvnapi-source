@@ -16,8 +16,8 @@ package net.play5d.game.bvn.ui
       
       public function destory() : void {}
       
-      public function fadIn(param1:Function = null) : void {}
+      public function fadIn(back:Function = null) : void {}
       
-      public function fadOut(param1:Function = null) : void {}
+      public function fadOut(back:Function = null) : void {}
    }
 }

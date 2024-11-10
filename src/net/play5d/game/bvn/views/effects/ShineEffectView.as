@@ -19,7 +19,7 @@ package net.play5d.game.bvn.views.effects
       
       public function destory() : void {}
       
-      public function init(param1:uint = 16777215, param2:Number = 0.2) : void {}
+      public function init(color:uint = 16777215, alpha:Number = 0.2) : void {}
       
       public function render() : void {}
       

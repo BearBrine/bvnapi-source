@@ -15,27 +15,27 @@ package net.play5d.game.bvn.ctrl
       
       public static function get I() : SoundCtrl {}
       
-      public function setSoundVolumn(param1:Number) : void {}
+      public function setSoundVolumn(v:Number) : void {}
       
-      public function setBgmVolumn(param1:Number) : void {}
+      public function setBgmVolumn(v:Number) : void {}
       
-      public function playAssetSound(param1:String, param2:Number = 1) : void {}
+      public function playAssetSound(name:String, vol:Number = 1) : void {}
       
-      public function playEffectSound(param1:String, param2:Number = 1) : void {}
+      public function playEffectSound(name:String, vol:Number = 1) : void {}
       
-      public function playAssetSoundRandom(... rest) : void {}
+      public function playAssetSoundRandom(... params) : void {}
       
-      public function playSwcSound(param1:Class) : void {}
+      public function playSwcSound(sc:Class) : void {}
       
-      public function BGM(param1:Object) : void {}
+      public function BGM(sound:Object) : void {}
       
       public function pauseBGM() : void {}
       
       public function resumeBGM() : void {}
       
-      public function loadFightBGM(param1:Array, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadFightBGM(arr:Array, success:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function playFightBGM(param1:String) : void {}
+      public function playFightBGM(id:String) : void {}
       
       public function unloadFightBGM() : void {}
       

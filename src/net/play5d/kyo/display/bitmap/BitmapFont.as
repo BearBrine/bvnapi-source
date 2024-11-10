@@ -18,9 +18,9 @@ package net.play5d.kyo.display.bitmap
       
       public var offsetY:Number = 0;
       
-      public function BitmapFont(param1:XML, param2:BitmapData) {}
+      public function BitmapFont(fontXML:XML, fontBitmap:BitmapData) {}
       
-      public function translate(param1:String) : BitmapData {}
+      public function translate(str:String) : BitmapData {}
    }
 }
 
@@ -48,7 +48,7 @@ class InsCharVO
    
    public var xadvance:int;
    
-   public function InsCharVO(param1:XML = null) {}
+   public function InsCharVO(xml:XML = null) {}
    
    public function clone() : InsCharVO {}
 }

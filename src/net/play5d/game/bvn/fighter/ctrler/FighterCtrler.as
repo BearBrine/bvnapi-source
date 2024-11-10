@@ -30,35 +30,35 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function get hp() : Number {}
       
-      public function set hp(param1:Number) : void {}
+      public function set hp(v:Number) : void {}
       
       public function get energy() : Number {}
       
-      public function set energy(param1:Number) : void {}
+      public function set energy(v:Number) : void {}
       
       public function get speed() : Number {}
       
-      public function set speed(param1:Number) : void {}
+      public function set speed(v:Number) : void {}
       
       public function get jumpPower() : Number {}
       
-      public function set jumpPower(param1:Number) : void {}
+      public function set jumpPower(v:Number) : void {}
       
       public function get heavy() : Number {}
       
-      public function set heavy(param1:Number) : void {}
+      public function set heavy(v:Number) : void {}
       
       public function get defenseType() : int {}
       
-      public function set defenseType(param1:int) : void {}
+      public function set defenseType(v:int) : void {}
       
-      public function addHp(param1:Number) : void {}
+      public function addHp(v:Number) : void {}
       
-      public function addHpPercent(param1:Number) : void {}
+      public function addHpPercent(v:Number) : void {}
       
-      public function loseHp(param1:Number) : void {}
+      public function loseHp(v:Number) : void {}
       
-      public function loseHpPercent(param1:Number) : void {}
+      public function loseHpPercent(v:Number) : void {}
       
       public function get self() : DisplayObject {}
       
@@ -68,54 +68,54 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function getTargetState() : int {}
       
-      public function setTargetVelocity(param1:Number, param2:Number) : void {}
+      public function setTargetVelocity(x:Number, y:Number) : void {}
       
-      public function setTargetDamping(param1:Number, param2:Number) : void {}
+      public function setTargetDamping(x:Number, y:Number) : void {}
       
-      public function targetInRange(param1:Array = null, param2:Array = null) : Boolean {}
+      public function targetInRange(rx:Array = null, ry:Array = null) : Boolean {}
       
-      public function justHit(param1:String, param2:Boolean = false) : Boolean {}
+      public function justHit(hitId:String, includeDefense:Boolean = false) : Boolean {}
       
       public function getMcCtrl() : FighterMcCtrler {}
       
-      public function initFighter(param1:FighterMain) : void {}
+      public function initFighter(fighter:FighterMain) : void {}
       
       public function renderAnimate() : void {}
       
       public function render() : void {}
       
-      public function setActionCtrl(param1:IFighterActionCtrl) : void {}
+      public function setActionCtrl(ctrler:IFighterActionCtrl) : void {}
       
-      public function defineAction(param1:String, param2:Object) : void {}
+      public function defineAction(id:String, obj:Object) : void {}
       
-      public function defineBishaFace(param1:String, param2:Class) : void {}
+      public function defineBishaFace(id:String, face:Class) : void {}
       
-      public function defineHurtSound(... rest) : void {}
+      public function defineHurtSound(... params) : void {}
       
-      public function defineHurtFlySound(... rest) : void {}
+      public function defineHurtFlySound(... params) : void {}
       
-      public function defineDieSound(... rest) : void {}
+      public function defineDieSound(... params) : void {}
       
-      public function initMc(param1:MovieClip) : void {}
+      public function initMc(mc:MovieClip) : void {}
       
       public function getCurrentHits() : Array {}
       
       public function getBodyArea() : Rectangle {}
       
-      public function getHitCheckRect(param1:String) : Rectangle {}
+      public function getHitCheckRect(name:String) : Rectangle {}
       
-      public function getCurrentRect(param1:Rectangle, param2:String = null) : Rectangle {}
+      public function getCurrentRect(rect:Rectangle, cacheId:String = null) : Rectangle {}
       
-      public function doWanKai(param1:int = 0) : void {}
+      public function doWanKai(frame:int = 0) : void {}
       
       public function setDirectToTarget() : void {}
       
-      public function moveOnce(param1:Number = 0, param2:Number = 0) : void {}
+      public function moveOnce(x:Number = 0, y:Number = 0) : void {}
       
-      public function moveToTarget(param1:Object = null, param2:Object = null, param3:Boolean = true) : void {}
+      public function moveToTarget(x:Object = null, y:Object = null, setDirect:Boolean = true) : void {}
       
-      public function setCross(param1:Boolean) : void {}
+      public function setCross(v:Boolean) : void {}
       
-      public function getHitRange(param1:String) : Rectangle {}
+      public function getHitRange(id:String) : Rectangle {}
    }
 }

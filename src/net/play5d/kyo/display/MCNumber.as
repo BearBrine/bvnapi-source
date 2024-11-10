@@ -22,12 +22,12 @@ package net.play5d.kyo.display
       
       protected var _bits:uint;
       
-      public function MCNumber(param1:Class, param2:uint, param3:int = 1, param4:Number = -1, param5:uint = 0) {}
+      public function MCNumber(mc:Class, number:uint, startFrame:int = 1, mcWidth:Number = -1, bits:uint = 0) {}
       
       public function get number() : uint {}
       
-      public function set number(param1:uint) : void {}
+      public function set number(v:uint) : void {}
       
-      protected function createNum(param1:int) : DisplayObject {}
+      protected function createNum(i:int) : DisplayObject {}
    }
 }

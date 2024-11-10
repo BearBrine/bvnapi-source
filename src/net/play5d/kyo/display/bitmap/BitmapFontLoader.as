@@ -15,12 +15,12 @@ package net.play5d.kyo.display.bitmap
       
       public function clear() : void {}
       
-      public function loadFonts(param1:Array, param2:Function = null, param3:Function = null) : void {}
+      public function loadFonts(urls:Array, back:Function = null, process:Function = null) : void {}
       
-      public function loadFont(param1:String, param2:XML, param3:Function = null, param4:Function = null) : void {}
+      public function loadFont(url:String, fontXML:XML, back:Function = null, fail:Function = null) : void {}
       
-      public function addFont(param1:XML, param2:BitmapData) : void {}
+      public function addFont(xml:XML, bitmap:BitmapData) : void {}
       
-      public function getFont(param1:String) : BitmapFont {}
+      public function getFont(id:String) : BitmapFont {}
    }
 }

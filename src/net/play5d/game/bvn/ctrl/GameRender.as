@@ -14,10 +14,10 @@ package net.play5d.game.bvn.ctrl
       
       public function GameRender() {}
       
-      public static function initlize(param1:Stage) : void {}
+      public static function initlize(stage:Stage) : void {}
       
-      public static function add(param1:Function, param2:* = null) : void {}
+      public static function add(func:Function, owner:* = null) : void {}
       
-      public static function remove(param1:Function, param2:* = null) : void {}
+      public static function remove(func:Function, owner:* = null) : void {}
    }
 }

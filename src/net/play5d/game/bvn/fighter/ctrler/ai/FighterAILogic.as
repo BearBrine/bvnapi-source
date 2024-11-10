@@ -66,7 +66,7 @@ package net.play5d.game.bvn.fighter.ctrler.ai
       
       public var ghostJumpDowm:Boolean;
       
-      public function FighterAILogic(param1:int, param2:FighterMain) {}
+      public function FighterAILogic(AILevel:int, fighter:FighterMain) {}
       
       override public function render() : void {}
       

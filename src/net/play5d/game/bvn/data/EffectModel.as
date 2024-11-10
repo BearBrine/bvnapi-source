@@ -11,10 +11,10 @@ package net.play5d.game.bvn.data
       
       public function initlize() : void {}
       
-      public function getEffect(param1:String) : EffectVO {}
+      public function getEffect(id:String) : EffectVO {}
       
-      public function getHitEffect(param1:int) : EffectVO {}
+      public function getHitEffect(type:int) : EffectVO {}
       
-      public function getDefenseEffect(param1:int) : EffectVO {}
+      public function getDefenseEffect(type:int) : EffectVO {}
    }
 }

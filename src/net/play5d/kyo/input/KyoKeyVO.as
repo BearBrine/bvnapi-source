@@ -12,7 +12,7 @@ package net.play5d.kyo.input
       
       public var isDown:Boolean;
       
-      public function KyoKeyVO(param1:String, param2:int) {}
+      public function KyoKeyVO(name:String, code:int) {}
       
       public function toString() : String {}
       

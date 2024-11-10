@@ -27,7 +27,7 @@ package net.play5d.game.bvn.views.effects
       
       public var onRemove:Function;
       
-      public function ShadowEffectView(param1:DisplayObject, param2:int = 0, param3:int = 0, param4:int = 0) {}
+      public function ShadowEffectView(target:DisplayObject, r:int = 0, g:int = 0, b:int = 0) {}
       
       public function destory() : void {}
       

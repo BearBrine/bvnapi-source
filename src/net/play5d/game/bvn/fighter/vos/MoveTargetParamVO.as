@@ -21,9 +21,9 @@ package net.play5d.game.bvn.fighter.vos
       
       public var speed:Point;
       
-      public function MoveTargetParamVO(param1:Object = null) {}
+      public function MoveTargetParamVO(params:Object = null) {}
       
-      public function setTarget(param1:IGameSprite) : void {}
+      public function setTarget(v:IGameSprite) : void {}
       
       public function clear() : void {}
    }

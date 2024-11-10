@@ -22,6 +22,6 @@ package net.play5d.game.bvn.views.effects
       
       public function fadOut() : void {}
       
-      public function showBishaFace(param1:int, param2:DisplayObject) : void {}
+      public function showBishaFace(faceid:int, face:DisplayObject) : void {}
    }
 }

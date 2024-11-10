@@ -14,9 +14,9 @@ package net.play5d.game.bvn.data
       
       public static function get I() : MessionModel {}
       
-      public function initByXML(param1:XML) : void {}
+      public function initByXML(xml:XML) : void {}
       
-      public function getMession(param1:int, param2:int) : MessionVO {}
+      public function getMession(comicType:int, gameMode:int) : MessionVO {}
       
       public function getCurrentMessionStage() : MessionStageVO {}
       

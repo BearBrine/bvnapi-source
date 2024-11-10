@@ -10,11 +10,11 @@ package net.play5d.game.bvn.views.effects
    public class SpecialEffectView extends EffectView
    {
       
-      public function SpecialEffectView(param1:EffectVO) {}
+      public function SpecialEffectView(data:EffectVO) {}
       
-      override public function setTarget(param1:IGameSprite) : void {}
+      override public function setTarget(v:IGameSprite) : void {}
       
-      override public function start(param1:Number = 0, param2:Number = 0, param3:int = 1) : void {}
+      override public function start(x:Number = 0, y:Number = 0, direct:int = 1) : void {}
       
       override public function render() : void {}
    }

@@ -15,7 +15,7 @@ package net.play5d.game.bvn.views.effects
       
       public function BishaFaceEffectView() {}
       
-      public function setFace(param1:int, param2:DisplayObject) : void {}
+      public function setFace(faceId:int, face:DisplayObject) : void {}
       
       public function fadIn() : void {}
       

@@ -14,9 +14,9 @@ package net.play5d.game.bvn.fighter.vos
       
       public var finished:Boolean = false;
       
-      public function FighterBuffVO(param1:String, param2:Number = 1) {}
+      public function FighterBuffVO(param:String, hold:Number = 1) {}
       
-      public function setHold(param1:Number) : void {}
+      public function setHold(v:Number) : void {}
       
       public function render() : Boolean {}
    }

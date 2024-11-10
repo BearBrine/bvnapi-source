@@ -29,6 +29,6 @@ package net.play5d.game.bvn.fighter.events
       
       public var fighter:BaseGameSprite;
       
-      public function FighterEvent(param1:String, param2:Boolean = false, param3:Boolean = false) {}
+      public function FighterEvent(type:String, bubbles:Boolean = false, cancelable:Boolean = false) {}
    }
 }

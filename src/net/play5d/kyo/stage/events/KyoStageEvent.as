@@ -13,6 +13,6 @@ package net.play5d.kyo.stage.events
       
       public var stage:Istage;
       
-      public function KyoStageEvent(param1:String, param2:Istage, param3:Boolean = false, param4:Boolean = false) {}
+      public function KyoStageEvent(type:String, stage:Istage, bubbles:Boolean = false, cancelable:Boolean = false) {}
    }
 }

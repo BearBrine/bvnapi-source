@@ -29,16 +29,16 @@ package net.play5d.game.bvn
       
       public function Debugger() {}
       
-      public static function log(... rest) : void {}
+      public static function log(... params) : void {}
       
-      public static function errorMsg(param1:String) : void {}
+      public static function errorMsg(msg:String) : void {}
       
-      public static function initDebug(param1:Stage) : void {}
+      public static function initDebug(stage:Stage) : void {}
       
-      public static function addChild(param1:DisplayObject) : void {}
+      public static function addChild(d:DisplayObject) : void {}
       
       public static function showFPS() : void {}
       
-      public static function runScriect(param1:Stage, param2:Function) : void {}
+      public static function runScriect(stage:Stage, success:Function) : void {}
    }
 }

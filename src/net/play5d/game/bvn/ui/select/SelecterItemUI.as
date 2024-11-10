@@ -39,19 +39,19 @@ package net.play5d.game.bvn.ui.select
       
       public var randFrame:int;
       
-      public function SelecterItemUI(param1:int = 1) {}
+      public function SelecterItemUI(playerType:int = 1) {}
       
       public function selectFinish() : Boolean {}
       
       public function getCurrentSelectes() : Array {}
       
-      public function setCurrentSelect(param1:Array) : void {}
+      public function setCurrentSelect(v:Array) : void {}
       
-      public function isSelected(param1:String) : Boolean {}
+      public function isSelected(id:String) : Boolean {}
       
-      public function select(param1:Function = null) : void {}
+      public function select(back:Function = null) : void {}
       
-      public function moveTo(param1:Number, param2:Number) : void {}
+      public function moveTo(x:Number, y:Number) : void {}
       
       public function destory() : void {}
       

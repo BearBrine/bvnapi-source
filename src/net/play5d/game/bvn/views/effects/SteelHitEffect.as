@@ -11,8 +11,8 @@ package net.play5d.game.bvn.views.effects
    public class SteelHitEffect extends EffectView
    {
       
-      public function SteelHitEffect(param1:EffectVO) {}
+      public function SteelHitEffect(data:EffectVO) {}
       
-      override public function setTarget(param1:IGameSprite) : void {}
+      override public function setTarget(v:IGameSprite) : void {}
    }
 }

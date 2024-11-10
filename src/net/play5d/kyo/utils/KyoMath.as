@@ -10,24 +10,24 @@ package net.play5d.kyo.utils
       
       public function KyoMath() {}
       
-      public static function fixRange(param1:Number, param2:Number, param3:Number) : Number {}
+      public static function fixRange(number:Number, min:Number, max:Number) : Number {}
       
-      public static function inRange(param1:Number, param2:Number, param3:Number) : Boolean {}
+      public static function inRange(number:Number, min:Number, max:Number) : Boolean {}
       
-      public static function decimal(param1:Number, param2:int, param3:Function = null) : Number {}
+      public static function decimal(num:Number, n:int, mathFun:Function = null) : Number {}
       
-      public static function average(... rest) : Number {}
+      public static function average(... params) : Number {}
       
-      public static function sum(... rest) : Number {}
+      public static function sum(... params) : Number {}
       
-      public static function getAngleByPoints(param1:Point, param2:Point) : int {}
+      public static function getAngleByPoints(A:Point, B:Point) : int {}
       
-      public static function getDistanceByPoints(param1:Point, param2:Point) : Number {}
+      public static function getDistanceByPoints(A:Point, B:Point) : Number {}
       
-      public static function getPointByRadians(param1:Point, param2:Number, param3:Number = 1) : Point {}
+      public static function getPointByRadians(point:Point, radious:Number, scale:Number = 1) : Point {}
       
-      public static function asRadians(param1:Number) : Number {}
+      public static function asRadians(degrees:Number) : Number {}
       
-      public static function velocityFromAngle(param1:int, param2:int, param3:Boolean = true) : Point {}
+      public static function velocityFromAngle(angle:int, speed:int, isDegree:Boolean = true) : Point {}
    }
 }

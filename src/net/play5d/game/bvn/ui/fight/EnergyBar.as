@@ -8,15 +8,15 @@ package net.play5d.game.bvn.ui.fight
    public class EnergyBar
    {
       
-      public function EnergyBar(param1:*) {} //energy_bar
+      public function EnergyBar(ui:*) {} //energy_bar
       
       public function get ui() : DisplayObject {}
       
       public function destory() : void {}
       
-      public function setFighter(param1:FighterMain) : void {}
+      public function setFighter(v:FighterMain) : void {}
       
-      public function setDirect(param1:int) : void {}
+      public function setDirect(v:int) : void {}
       
       public function render() : void {}
    }
@@ -30,7 +30,7 @@ class InsBar
    
    public var rate:Number = 1;
    
-   public function InsBar(param1:MovieClip) {}
+   public function InsBar(mc:MovieClip) {}
    
    public function render() : void {}
    
@@ -46,11 +46,11 @@ import flash.display.MovieClip;
 class InsTxt
 {
    
-   public function InsTxt(param1:MovieClip) {}
+   public function InsTxt(mc:MovieClip) {}
    
-   public function setDirect(param1:int) : void {}
+   public function setDirect(v:int) : void {}
    
-   public function setType(param1:int) : void {}
+   public function setType(v:int) : void {}
    
    public function render() : void {}
    

@@ -2,6 +2,7 @@
 
 package net.play5d.kyo.sound
 {
+   import flash.events.Event;
    import flash.media.Sound;
    import flash.media.SoundChannel;
    import flash.media.SoundTransform;
@@ -21,9 +22,9 @@ package net.play5d.kyo.sound
       
       public function get volume() : Number {}
       
-      public function set volume(param1:Number) : void {}
+      public function set volume(value:Number) : void {}
       
-      public function play(param1:Object = null) : void {}
+      public function play(snd:Object = null) : void {}
       
       public function stop() : void {}
       

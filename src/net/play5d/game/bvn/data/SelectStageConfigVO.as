@@ -32,6 +32,6 @@ package net.play5d.game.bvn.data
       
       public function SelectStageConfigVO() {}
       
-      public function setByXML(param1:XML) : void {}
+      public function setByXML(xml:XML) : void {}
    }
 }

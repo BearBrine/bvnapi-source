@@ -18,6 +18,6 @@ package net.play5d.game.bvn.ui
       
       public function UIUtils() {}
       
-      public static function formatText(param1:TextField, param2:Object = null) : void {}
+      public static function formatText(text:TextField, textFormatParam:Object = null) : void {}
    }
 }

@@ -37,16 +37,16 @@ package net.play5d.game.bvn.ui
       
       public function SetBtnGroup() {}
       
-      public function initScroll(param1:Number, param2:Number) : void {}
+      public function initScroll(W:Number, H:Number) : void {}
       
       public function initMainSet() : void {}
       
       public function initKeySet() : void {}
       
-      public function setBtnData(param1:Array, param2:int = 0) : void {}
+      public function setBtnData(v:Array, defaultSelect:int = 0) : void {}
       
       public function destory() : void {}
       
-      public function setArrowIndex(param1:int, param2:Boolean = true) : void {}
+      public function setArrowIndex(id:int, sound:Boolean = true) : void {}
    }
 }

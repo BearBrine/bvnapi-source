@@ -104,8 +104,8 @@ package net.play5d.game.bvn.fighter
       
       public function render() : void {}
       
-      public function setCD(param1:String, param2:int) : void {}
+      public function setCD(id:String, time:int) : void {}
       
-      public function CDOK(param1:String) : Boolean {}
+      public function CDOK(id:String) : Boolean {}
    }
 }

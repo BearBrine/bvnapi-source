@@ -22,9 +22,9 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public function GameMainLogicCtrler() {}
       
-      public function initlize(param1:GameState, param2:TeamMap, param3:MapMain) : void {}
+      public function initlize(gameState:GameState, teamMap:TeamMap, map:MapMain) : void {}
       
-      public function setSpeedPlus(param1:Number) : void {}
+      public function setSpeedPlus(v:Number) : void {}
       
       public function destory() : void {}
       

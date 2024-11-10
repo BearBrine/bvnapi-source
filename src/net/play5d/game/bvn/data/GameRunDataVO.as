@@ -43,7 +43,7 @@ package net.play5d.game.bvn.data
       
       public function GameRunDataVO() {}
       
-      public function getWins(param1:FighterMain) : int {}
+      public function getWins(f:FighterMain) : int {}
       
       public function reset() : void {}
       
@@ -51,6 +51,6 @@ package net.play5d.game.bvn.data
       
       public function nextRound() : void {}
       
-      public function setAllowLoseHP(param1:Boolean) : void {}
+      public function setAllowLoseHP(v:Boolean) : void {}
    }
 }

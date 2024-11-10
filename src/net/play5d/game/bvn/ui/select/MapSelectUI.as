@@ -5,6 +5,7 @@ package net.play5d.game.bvn.ui.select
    import flash.display.DisplayObject;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
+   import flash.events.TouchEvent;
    import flash.filters.GlowFilter;
    import net.play5d.game.bvn.GameConfig;
    import net.play5d.game.bvn.ctrl.AssetManager;
@@ -28,11 +29,11 @@ package net.play5d.game.bvn.ui.select
       
       public function MapSelectUI() {}
       
-      public function addMouseEvents(param1:Function, param2:Function, param3:Function) : void {}
+      public function addMouseEvents(prev:Function, next:Function, confrim:Function) : void {}
       
       public function destory() : void {}
       
-      public function select(param1:Function) : void {}
+      public function select(back:Function) : void {}
       
       public function prev() : void {}
       

@@ -25,6 +25,6 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public function destory() : void {}
       
-      public function getAttacker(param1:String, param2:int) : FighterAttacker {}
+      public function getAttacker(name:String, team:int) : FighterAttacker {}
    }
 }

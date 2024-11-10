@@ -15,12 +15,12 @@ package net.play5d.game.bvn.data
       
       public var children:Vector.<IGameSprite>;
       
-      public function TeamVO(param1:int, param2:String = null) {}
+      public function TeamVO(id:int, name:String = null) {}
       
       public function getAliveChildren() : Vector.<IGameSprite> {}
       
-      public function addChild(param1:IGameSprite) : void {}
+      public function addChild(v:IGameSprite) : void {}
       
-      public function removeChild(param1:IGameSprite) : void {}
+      public function removeChild(v:IGameSprite) : void {}
    }
 }

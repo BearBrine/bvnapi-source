@@ -63,45 +63,45 @@ package net.play5d.game.bvn.interfaces
       
       protected var _destoryed:Boolean;
       
-      public function BaseGameSprite(param1:MovieClip) {}
+      public function BaseGameSprite(mainmc:MovieClip) {}
       
       public function get attackRate() : Number {}
       
-      public function set attackRate(param1:Number) : void {}
+      public function set attackRate(value:Number) : void {}
       
       public function get defenseRate() : Number {}
       
-      public function set defenseRate(param1:Number) : void {}
+      public function set defenseRate(value:Number) : void {}
       
       public function get mc() : MovieClip {}
       
       public function get x() : Number {}
       
-      public function set x(param1:Number) : void {}
+      public function set x(v:Number) : void {}
       
       public function get y() : Number {}
       
-      public function set y(param1:Number) : void {}
+      public function set y(v:Number) : void {}
       
       public function get scale() : Number {}
       
-      public function set scale(param1:Number) : void {}
+      public function set scale(v:Number) : void {}
       
       public function get direct() : int {}
       
-      public function set direct(param1:int) : void {}
+      public function set direct(value:int) : void {}
       
       public function get team() : TeamVO {}
       
-      public function set team(param1:TeamVO) : void {}
+      public function set team(value:TeamVO) : void {}
       
       public function updatePosition() : void {}
       
-      public function setVolume(param1:Number) : void {}
+      public function setVolume(v:Number) : void {}
       
       public function isDestoryed() : Boolean {}
       
-      public function destory(param1:Boolean = true) : void {}
+      public function destory(dispose:Boolean = true) : void {}
       
       public function renderAnimate() : void {}
       
@@ -109,9 +109,9 @@ package net.play5d.game.bvn.interfaces
       
       public function getDisplay() : DisplayObject {}
       
-      public function move(param1:Number = 0, param2:Number = 0) : void {}
+      public function move(x:Number = 0, y:Number = 0) : void {}
       
-      public function setSpeedRate(param1:Number) : void {}
+      public function setSpeedRate(v:Number) : void {}
       
       public function getVelocity() : Point {}
       
@@ -119,15 +119,15 @@ package net.play5d.game.bvn.interfaces
       
       public function getVecY() : Number {}
       
-      public function setVecX(param1:Number) : void {}
+      public function setVecX(v:Number) : void {}
       
-      public function setVecY(param1:Number) : void {}
+      public function setVecY(v:Number) : void {}
       
-      public function setVelocity(param1:Number = 0, param2:Number = 0) : void {}
+      public function setVelocity(x:Number = 0, y:Number = 0) : void {}
       
-      public function addVelocity(param1:Number = 0, param2:Number = 0) : void {}
+      public function addVelocity(x:Number = 0, y:Number = 0) : void {}
       
-      public function setVec2(param1:Number = 0, param2:Number = 0, param3:Number = 0, param4:Number = 0) : void {}
+      public function setVec2(x:Number = 0, y:Number = 0, dampingX:Number = 0, dampingY:Number = 0) : void {}
       
       public function getVec2() : Point {}
       
@@ -135,21 +135,21 @@ package net.play5d.game.bvn.interfaces
       
       public function getDampingY() : Number {}
       
-      public function setDampingX(param1:Number) : void {}
+      public function setDampingX(v:Number) : void {}
       
-      public function setDampingY(param1:Number) : void {}
+      public function setDampingY(v:Number) : void {}
       
-      public function setDamping(param1:Number = 0, param2:Number = 0) : void {}
+      public function setDamping(x:Number = 0, y:Number = 0) : void {}
       
-      public function addDamping(param1:Number = 0, param2:Number = 0) : void {}
+      public function addDamping(x:Number = 0, y:Number = 0) : void {}
       
-      public function applayG(param1:Number) : void {}
+      public function applayG(g:Number) : void {}
       
-      public function setInAir(param1:Boolean) : void {}
+      public function setInAir(v:Boolean) : void {}
       
-      public function hit(param1:HitVO, param2:IGameSprite) : void {}
+      public function hit(hitvo:HitVO, target:IGameSprite) : void {}
       
-      public function beHit(param1:HitVO, param2:Rectangle = null) : void {}
+      public function beHit(hitvo:HitVO, hitRect:Rectangle = null) : void {}
       
       public function getCurrentHits() : Array {}
       
@@ -163,18 +163,18 @@ package net.play5d.game.bvn.interfaces
       
       public function getIsTouchSide() : Boolean {}
       
-      public function setIsTouchSide(param1:Boolean) : void {}
+      public function setIsTouchSide(v:Boolean) : void {}
       
-      public function addHp(param1:Number) : void {}
+      public function addHp(v:Number) : void {}
       
-      public function loseHp(param1:Number) : void {}
+      public function loseHp(v:Number) : void {}
       
-      public function delayCall(param1:Function, param2:int) : void {}
+      public function delayCall(func:Function, frame:int) : void {}
       
       public function renderSelf() : void {}
       
       public function stopRenderSelf() : void {}
       
-      public function setAnimateFrameOut(param1:Function, param2:int) : void {}
+      public function setAnimateFrameOut(func:Function, frame:int) : void {}
    }
 }

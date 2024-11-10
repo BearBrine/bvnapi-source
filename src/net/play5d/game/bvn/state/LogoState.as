@@ -19,6 +19,6 @@ package net.play5d.game.bvn.state
       
       public function afterBuild() : void {}
       
-      public function destory(param1:Function = null) : void {}
+      public function destory(back:Function = null) : void {}
    }
 }

@@ -28,30 +28,30 @@ package net.play5d.game.bvn.state
       
       public var autoZoomMax:Number = 3;
       
-      public function GameCamera(param1:DisplayObject, param2:Point, param3:Point = null, param4:Boolean = false) {}
+      public function GameCamera(stage:DisplayObject, screenSize:Point, stageSize:Point = null, fixBorder:Boolean = false) {}
       
-      public function getScreenRect(param1:Boolean = false) : Rectangle {}
+      public function getScreenRect(withTween:Boolean = false) : Rectangle {}
       
       public function updateNow() : void {}
       
-      public function setStageBounds(param1:Rectangle = null) : void {}
+      public function setStageBounds(rect:Rectangle = null) : void {}
       
-      public function setStageSizeFromDisplay(param1:DisplayObject) : void {}
+      public function setStageSizeFromDisplay(d:DisplayObject) : void {}
       
-      public function getZoom(param1:Boolean = false) : Number {}
+      public function getZoom(withTween:Boolean = false) : Number {}
       
-      public function setZoom(param1:Number) : void {}
+      public function setZoom(value:Number) : void {}
       
-      public function focus(param1:Array, param2:Boolean = false) : void {}
+      public function focus(focusArr:Array, notween:Boolean = false) : void {}
       
-      public function move(param1:Number, param2:Number) : void {}
+      public function move(x:Number, y:Number) : void {}
       
       public function moveCenter() : void {}
       
       public function render() : void {}
       
-      public function setX(param1:Number) : void {}
+      public function setX(v:Number) : void {}
       
-      public function setY(param1:Number) : void {}
+      public function setY(v:Number) : void {}
    }
 }

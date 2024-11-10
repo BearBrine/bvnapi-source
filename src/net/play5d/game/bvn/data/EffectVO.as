@@ -45,7 +45,7 @@ package net.play5d.game.bvn.data
       
       public var isSteelHit:Boolean = false;
       
-      public function EffectVO(param1:String, param2:Object = null) {}
+      public function EffectVO(className:String, param:Object = null) {}
       
       public function clone() : EffectVO {}
       

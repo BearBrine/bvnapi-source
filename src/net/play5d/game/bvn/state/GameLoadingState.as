@@ -18,10 +18,10 @@ package net.play5d.game.bvn.state
       
       public function build() : void {}
       
-      public function loadGame(param1:Function, param2:Function) : void {}
+      public function loadGame(succ:Function, fail:Function) : void {}
       
       public function afterBuild() : void {}
       
-      public function destory(param1:Function = null) : void {}
+      public function destory(back:Function = null) : void {}
    }
 }

@@ -47,11 +47,11 @@ package net.play5d.game.bvn
       
       public function get stage() : Stage {}
       
-      public function initlize(param1:Sprite, param2:Stage, param3:Function = null, param4:Function = null) : void {}
+      public function initlize(root:Sprite, stage:Stage, initBack:Function = null, initFail:Function = null) : void {}
       
       public function getFPS() : Number {}
       
-      public function setFPS(param1:Number) : void {}
+      public function setFPS(v:Number) : void {}
       
       public function goLogo() : void {}
       

@@ -22,7 +22,7 @@ package net.play5d.game.bvn.events
       
       public var optionValue:*;
       
-      public function SetBtnEvent(param1:String, param2:Boolean = false, param3:Boolean = false) {}
+      public function SetBtnEvent(type:String, bubbles:Boolean = false, cancelable:Boolean = false) {}
       
       public function newEvent() : SetBtnEvent {}
    }

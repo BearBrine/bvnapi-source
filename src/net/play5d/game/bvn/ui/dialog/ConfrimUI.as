@@ -25,6 +25,6 @@ package net.play5d.game.bvn.ui.dialog
       
       public function destory() : void {}
       
-      public function setMsg(param1:String = null, param2:String = null) : void {}
+      public function setMsg(en:String = null, cn:String = null) : void {}
    }
 }

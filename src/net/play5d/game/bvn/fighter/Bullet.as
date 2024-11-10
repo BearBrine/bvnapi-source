@@ -44,33 +44,33 @@ package net.play5d.game.bvn.fighter
       
       public var owner:IGameSprite;
       
-      public function Bullet(param1:MovieClip, param2:Object = null) {}
+      public function Bullet(mc:MovieClip, params:Object = null) {}
       
       public function get x() : Number {}
       
-      public function set x(param1:Number) : void {}
+      public function set x(v:Number) : void {}
       
       public function get y() : Number {}
       
-      public function set y(param1:Number) : void {}
+      public function set y(v:Number) : void {}
       
       public function get team() : TeamVO {}
       
-      public function set team(param1:TeamVO) : void {}
+      public function set team(value:TeamVO) : void {}
       
       public function isAttacking() : Boolean {}
       
-      public function setSpeedRate(param1:Number) : void {}
+      public function setSpeedRate(v:Number) : void {}
       
-      public function setVolume(param1:Number) : void {}
+      public function setVolume(v:Number) : void {}
       
       public function get direct() : int {}
       
-      public function set direct(param1:int) : void {}
+      public function set direct(value:int) : void {}
       
-      public function setHitVO(param1:HitVO) : void {}
+      public function setHitVO(v:HitVO) : void {}
       
-      public function destory(param1:Boolean = true) : void {}
+      public function destory(dispose:Boolean = true) : void {}
       
       public function isDestoryed() : Boolean {}
       
@@ -80,9 +80,9 @@ package net.play5d.game.bvn.fighter
       
       public function getDisplay() : DisplayObject {}
       
-      public function hit(param1:HitVO, param2:IGameSprite) : void {}
+      public function hit(hitvo:HitVO, target:IGameSprite) : void {}
       
-      public function beHit(param1:HitVO, param2:Rectangle = null) : void {}
+      public function beHit(hitvo:HitVO, hitRect:Rectangle = null) : void {}
       
       public function getCurrentHits() : Array {}
       
@@ -96,6 +96,6 @@ package net.play5d.game.bvn.fighter
       
       public function getIsTouchSide() : Boolean {}
       
-      public function setIsTouchSide(param1:Boolean) : void {}
+      public function setIsTouchSide(v:Boolean) : void {}
    }
 }

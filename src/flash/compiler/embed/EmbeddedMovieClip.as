@@ -16,15 +16,15 @@ package flash.compiler.embed
       
       protected var initialHeight:Number = 0;
       
-      public function EmbeddedMovieClip(param1:ByteArray, param2:Number, param3:Number) {}
+      public function EmbeddedMovieClip(bytes:ByteArray, initialWidth:Number, initialHeight:Number) {}
       
       override public function get height() : Number {}
       
-      override public function set height(param1:Number) : void {}
+      override public function set height(value:Number) : void {}
       
       override public function get width() : Number {}
       
-      override public function set width(param1:Number) : void {}
+      override public function set width(value:Number) : void {}
       
       public function get movieClipData() : ByteArray {}
    }

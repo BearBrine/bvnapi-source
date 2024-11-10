@@ -17,12 +17,12 @@ package net.play5d.kyo.loader
       
       public function KyoClassLoader() {}
       
-      public function getClass(param1:String, param2:String = null) : Class {}
+      public function getClass(className:String, swf:String = null) : Class {}
       
       public function get loadedAmount() : int {}
       
-      public function load(param1:Object) : void {}
+      public function load(url:Object) : void {}
       
-      public function addSwf(param1:String, param2:Loader) : void {}
+      public function addSwf(id:String, swf:Loader) : void {}
    }
 }

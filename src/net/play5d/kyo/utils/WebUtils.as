@@ -18,28 +18,28 @@ package net.play5d.kyo.utils
       
       public function WebUtils() {}
       
-      public static function getURL(param1:String, param2:String = "_blank") : void {}
+      public static function getURL(url:String, target:String = "_blank") : void {}
       
-      public static function addJSCallBack(param1:String, param2:Function, param3:String = null, param4:TextField = null) : void {}
+      public static function addJSCallBack(functionName:String, closure:Function, jsReady:String = null, debugTxt:TextField = null) : void {}
       
-      public static function checkLockedURL(... rest) : Boolean {}
+      public static function checkLockedURL(... params) : Boolean {}
       
-      public static function getParameters(param1:Stage, param2:String, param3:Function, param4:int = 0) : void {}
+      public static function getParameters(stage:Stage, checkVar:String, back:Function, timeout:int = 0) : void {}
       
-      public static function getLocalUrl(param1:Stage) : String {}
+      public static function getLocalUrl(s:Stage) : String {}
       
-      public static function replaceUrl(param1:String, param2:String, param3:String) : String {}
+      public static function replaceUrl(txt:String, matchKey:String, urlPath:String) : String {}
       
-      public static function getUrlFloder(param1:String) : String {}
+      public static function getUrlFloder(url:String) : String {}
       
-      public static function getLocalFloder(param1:String) : String {}
+      public static function getLocalFloder(url:String) : String {}
       
-      public static function getFileName(param1:Stage) : String {}
+      public static function getFileName(stage:Stage) : String {}
       
-      public static function getStageUrlFloder(param1:Stage) : String {}
+      public static function getStageUrlFloder(stage:Stage) : String {}
       
       public static function refresh() : void {}
       
-      public static function alert(param1:String) : void {}
+      public static function alert(v:String) : void {}
    }
 }

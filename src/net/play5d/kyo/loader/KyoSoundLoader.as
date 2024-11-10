@@ -16,12 +16,12 @@ package net.play5d.kyo.loader
       
       public function unload() : void {}
       
-      public function loadSounds(param1:Array, param2:Function = null, param3:Function = null) : void {}
+      public function loadSounds(urls:Array, back:Function = null, process:Function = null) : void {}
       
-      public function getSound(param1:String) : Sound {}
+      public function getSound(pathOrname:String) : Sound {}
       
-      public function addSound(param1:String, param2:Sound) : void {}
+      public function addSound(url:String, sound:Sound) : void {}
       
-      public function loadPath(param1:String, param2:String, param3:Function = null) : void {}
+      public function loadPath(path:String, listXML:String, back:Function = null) : void {}
    }
 }

@@ -10,8 +10,8 @@ package net.play5d.game.bvn.utils
       
       public function GameLoger() {}
       
-      public static function setLoger(param1:ILoger) : void {}
+      public static function setLoger(v:ILoger) : void {}
       
-      public static function log(param1:String) : void {}
+      public static function log(v:String) : void {}
    }
 }

@@ -11,7 +11,7 @@ package net.play5d.game.bvn.ui
       
       public function SetBtnLine() {}
       
-      public function show(param1:Number, param2:String) : void {}
+      public function show(width:Number, text:String) : void {}
       
       public function hide() : void {}
    }

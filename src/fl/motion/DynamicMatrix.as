@@ -16,9 +16,9 @@ package fl.motion
       
       protected var m_matrix:Array;
       
-      public function DynamicMatrix(param1:int, param2:int) {}
+      public function DynamicMatrix(width:int, height:int) {}
       
-      protected function Create(param1:int, param2:int) : void {}
+      protected function Create(width:int, height:int) : void {}
       
       protected function Destroy() : void {}
       
@@ -26,18 +26,18 @@ package fl.motion
       
       public function GetHeight() : Number {}
       
-      public function GetValue(param1:int, param2:int) : Number {}
+      public function GetValue(row:int, col:int) : Number {}
       
-      public function SetValue(param1:int, param2:int, param3:Number) : void {}
+      public function SetValue(row:int, col:int, value:Number) : void {}
       
       public function LoadIdentity() : void {}
       
       public function LoadZeros() : void {}
       
-      public function Multiply(param1:DynamicMatrix, param2:int = 0) : Boolean {}
+      public function Multiply(inMatrix:DynamicMatrix, order:int = 0) : Boolean {}
       
-      public function MultiplyNumber(param1:Number) : Boolean {}
+      public function MultiplyNumber(value:Number) : Boolean {}
       
-      public function Add(param1:DynamicMatrix) : Boolean {}
+      public function Add(inMatrix:DynamicMatrix) : Boolean {}
    }
 }

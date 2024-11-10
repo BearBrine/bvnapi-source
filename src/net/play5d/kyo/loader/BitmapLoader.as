@@ -18,6 +18,6 @@ package net.play5d.kyo.loader
       
       public function BitmapLoader() {}
       
-      public function load(param1:String, param2:Function = null, param3:Function = null) : void {}
+      public function load(url:String, back:Function = null, fail:Function = null) : void {}
    }
 }

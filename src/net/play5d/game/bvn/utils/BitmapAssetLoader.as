@@ -12,8 +12,8 @@ package net.play5d.game.bvn.utils
       
       public function BitmapAssetLoader() {}
       
-      public function getBitmap(param1:*) : Bitmap {}
+      public function getBitmap(id:*) : Bitmap {}
       
-      public function loadQueue(param1:Array, param2:Function, param3:Function = null) : void {}
+      public function loadQueue(urls:Array, success:Function, process:Function = null) : void {}
    }
 }

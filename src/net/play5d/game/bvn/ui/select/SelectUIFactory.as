@@ -13,6 +13,6 @@ package net.play5d.game.bvn.ui.select
       
       public function SelectUIFactory() {}
       
-      public static function createSelecter(param1:int = 1) : SelecterItemUI {}
+      public static function createSelecter(playerType:int = 1) : SelecterItemUI {}
    }
 }

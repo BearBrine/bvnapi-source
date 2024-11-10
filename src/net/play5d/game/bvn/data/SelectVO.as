@@ -18,7 +18,7 @@ package net.play5d.game.bvn.data
       
       public function getSelectFighters() : Array {}
       
-      public function isSelected(param1:String) : Boolean {}
+      public function isSelected(id:String) : Boolean {}
       
       public function toString() : String {}
    }

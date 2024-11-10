@@ -16,31 +16,31 @@ package net.play5d.game.bvn.fighter.ctrler
    public class FighterEffectCtrl
    {
       
-      public function FighterEffectCtrl(param1:BaseGameSprite) {}
+      public function FighterEffectCtrl(target:BaseGameSprite) {}
       
       public function destory() : void {}
       
-      public function setBishaFace(param1:String, param2:Class) : void {}
+      public function setBishaFace(id:String, face:Class) : void {}
       
-      public function shine(param1:uint = 16777215) : void {}
+      public function shine(color:uint = 16777215) : void {}
       
-      public function shake(param1:Number = 0, param2:Number = 3, param3:Number = 0) : void {}
+      public function shake(powX:Number = 0, powY:Number = 3, time:Number = 0) : void {}
       
-      public function startShake(param1:Number = 0, param2:Number = 3) : void {}
+      public function startShake(powX:Number = 0, powY:Number = 3) : void {}
       
       public function endShake() : void {}
       
-      public function shadow(param1:int = 0, param2:int = 0, param3:int = 0) : void {}
+      public function shadow(r:int = 0, g:int = 0, b:int = 0) : void {}
       
       public function endShadow() : void {}
       
       public function dash() : void {}
       
-      public function bisha(param1:Boolean = false, param2:String = null) : void {}
+      public function bisha(isSuper:Boolean = false, face:String = null) : void {}
       
       public function endBisha() : void {}
       
-      public function startWanKai(param1:String = null) : void {}
+      public function startWanKai(face:String = null) : void {}
       
       public function endWanKai() : void {}
       
@@ -52,9 +52,9 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function touchFloor() : void {}
       
-      public function hitFloor(param1:int) : void {}
+      public function hitFloor(type:int) : void {}
       
-      public function slowDown(param1:Number) : void {}
+      public function slowDown(time:Number) : void {}
       
       public function energyExplode() : void {}
       
@@ -64,7 +64,7 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function endGhostStep() : void {}
       
-      public function startGlow(param1:uint = 16777215) : void {}
+      public function startGlow(color:uint = 16777215) : void {}
       
       public function endGlow() : void {}
    }

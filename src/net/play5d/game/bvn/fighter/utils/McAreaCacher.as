@@ -10,18 +10,18 @@ package net.play5d.game.bvn.fighter.utils
       
       public var name:String;
       
-      public function McAreaCacher(param1:String) {}
+      public function McAreaCacher(name:String) {}
       
       public function destory() : void {}
       
-      public function areaFrameDefined(param1:int) : Boolean {}
+      public function areaFrameDefined(frame:int) : Boolean {}
       
-      public function getAreaByFrame(param1:int) : Object {}
+      public function getAreaByFrame(frame:int) : Object {}
       
-      public function cacheAreaByFrame(param1:int, param2:Object) : void {}
+      public function cacheAreaByFrame(frame:int, area:Object) : void {}
       
-      public function getAreaByDisplay(param1:DisplayObject) : Object {}
+      public function getAreaByDisplay(display:DisplayObject) : Object {}
       
-      public function cacheAreaByDisplay(param1:DisplayObject, param2:Rectangle, param3:Object = null) : Object {}
+      public function cacheAreaByDisplay(display:DisplayObject, area:Rectangle, customParam:Object = null) : Object {}
    }
 }

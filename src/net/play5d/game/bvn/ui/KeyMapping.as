@@ -21,8 +21,8 @@ package net.play5d.game.bvn.ui
       
       public var cn:String;
       
-      public function KeyMapping(param1:Sprite, param2:String, param3:String, param4:String) {}
+      public function KeyMapping(mc:Sprite, keyId:String, name:String, cn:String) {}
       
-      public function setKey(param1:int, param2:String = null) : void {}
+      public function setKey(code:int, keyName:String = null) : void {}
    }
 }

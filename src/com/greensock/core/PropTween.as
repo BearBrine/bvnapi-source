@@ -24,6 +24,6 @@ package com.greensock.core
       
       public var prevNode:PropTween;
       
-      public function PropTween(param1:Object, param2:String, param3:Number, param4:Number, param5:String, param6:Boolean, param7:PropTween = null, param8:int = 0) {}
+      public function PropTween(target:Object, property:String, start:Number, change:Number, name:String, isPlugin:Boolean, nextNode:PropTween = null, priority:int = 0) {}
    }
 }

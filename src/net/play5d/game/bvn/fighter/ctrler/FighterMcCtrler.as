@@ -30,7 +30,7 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public var effectCtrler:FighterEffectCtrl;
       
-      public function FighterMcCtrler(param1:FighterMain) {}
+      public function FighterMcCtrler(fighter:FighterMain) {}
       
       public function destory() : void {}
       
@@ -59,29 +59,29 @@ package net.play5d.game.bvn.fighter.ctrler
        */
       public function getActionCtrler() : IFighterActionCtrl {}
       
-      public function setActionCtrler(param1:IFighterActionCtrl) : void {}
+      public function setActionCtrler(v:IFighterActionCtrl) : void {}
       
-      public function setMc(param1:FighterMC) : void {}
+      public function setMc(mc:FighterMC) : void {}
       
-      public function setSteelBody(param1:Boolean, param2:Boolean = false) : void {}
+      public function setSteelBody(v:Boolean, isSuper:Boolean = false) : void {}
       
-      public function addQi(param1:Number) : void {}
+      public function addQi(qi:Number) : void {}
       
-      public function idle(param1:String = "站立") : void {}
+      public function idle(frame:String = "站立") : void {}
       
-      public function loop(param1:String) : void {}
+      public function loop(frame:String) : void {}
       
       public function stop() : void {}
       
-      public function dash(param1:Number = 3) : void {}
+      public function dash(speedPlus:Number = 3) : void {}
       
-      public function dashStop(param1:Number = 0.5) : void {}
+      public function dashStop(loseSpdPercent:Number = 0.5) : void {}
       
       public function setAllAct() : void {}
       
       public function setAirAllAct() : void {}
       
-      public function setAirMove(param1:Boolean) : void {}
+      public function setAirMove(v:Boolean) : void {}
       
       public function setMove() : void {}
       
@@ -91,81 +91,81 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function setDefense() : void {}
       
-      public function setJump(param1:String = "跳") : void {}
+      public function setJump(action:String = "跳") : void {}
       
-      public function setJumpQuick(param1:String = "跳") : void {}
+      public function setJumpQuick(action:String = "跳") : void {}
       
-      public function setJumpDown(param1:String = "落") : void {}
+      public function setJumpDown(action:String = "落") : void {}
       
-      public function setDash(param1:String = "瞬步") : void {}
+      public function setDash(action:String = "瞬步") : void {}
       
-      public function setAttack(param1:String = "砍1") : void {}
+      public function setAttack(action:String = "砍1") : void {}
       
-      public function setSkill1(param1:String = "砍技1") : void {}
+      public function setSkill1(action:String = "砍技1") : void {}
       
-      public function setSkill2(param1:String = "砍技2") : void {}
+      public function setSkill2(action:String = "砍技2") : void {}
       
-      public function setZhao1(param1:String = "招1") : void {}
+      public function setZhao1(action:String = "招1") : void {}
       
-      public function setZhao2(param1:String = "招2") : void {}
+      public function setZhao2(action:String = "招2") : void {}
       
-      public function setZhao3(param1:String = "招3") : void {}
+      public function setZhao3(action:String = "招3") : void {}
       
-      public function setCatch1(param1:String = "摔1") : void {}
+      public function setCatch1(action:String = "摔1") : void {}
       
-      public function setCatch2(param1:String = "摔2") : void {}
+      public function setCatch2(action:String = "摔2") : void {}
       
-      public function setBisha(param1:String = "必杀", param2:int = 100) : void {}
+      public function setBisha(action:String = "必杀", qi:int = 100) : void {}
       
-      public function setBishaUP(param1:String = "上必杀", param2:int = 100) : void {}
+      public function setBishaUP(action:String = "上必杀", qi:int = 100) : void {}
       
-      public function setBishaSUPER(param1:String = "超必杀", param2:int = 300) : void {}
+      public function setBishaSUPER(action:String = "超必杀", qi:int = 300) : void {}
       
-      public function setAttackAIR(param1:String = "跳砍") : void {}
+      public function setAttackAIR(action:String = "跳砍") : void {}
       
-      public function setSkillAIR(param1:String = "跳招") : void {}
+      public function setSkillAIR(action:String = "跳招") : void {}
       
-      public function setBishaAIR(param1:String = "空中必杀", param2:int = 100) : void {}
+      public function setBishaAIR(action:String = "空中必杀", qi:int = 100) : void {}
       
-      public function setTouchFloor(param1:String = "落地", param2:Boolean = true) : void {}
+      public function setTouchFloor(action:String = "落地", breakAct:Boolean = true) : void {}
       
       public function setWankai() : void {}
       
-      public function setHitTarget(param1:String, param2:String) : void {}
+      public function setHitTarget(checker:String, action:String) : void {}
       
-      public function setHurtAction(param1:String) : void {}
+      public function setHurtAction(action:String) : void {}
       
-      public function move(param1:Number = 0, param2:Number = 0) : void {}
+      public function move(x:Number = 0, y:Number = 0) : void {}
       
-      public function movePercent(param1:Number = 0, param2:Number = 0) : void {}
+      public function movePercent(x:Number = 0, y:Number = 0) : void {}
       
       public function stopMove() : void {}
       
-      public function damping(param1:Number = 0, param2:Number = 0) : void {}
+      public function damping(x:Number = 0, y:Number = 0) : void {}
       
-      public function dampingPercent(param1:Number = 0, param2:Number = 0) : void {}
+      public function dampingPercent(x:Number = 0, y:Number = 0) : void {}
       
       public function endAct() : void {}
       
-      public function fire(param1:String, param2:Object = null) : void {}
+      public function fire(mcName:String, params:Object = null) : void {}
       
-      public function addAttacker(param1:String, param2:Object = null) : void {}
+      public function addAttacker(mcName:String, params:Object = null) : void {}
       
-      public function isApplyG(param1:Boolean) : void {}
+      public function isApplyG(v:Boolean) : void {}
       
-      public function gotoAndPlay(param1:String) : void {}
+      public function gotoAndPlay(frame:String) : void {}
       
-      public function gotoAndStop(param1:String) : void {}
+      public function gotoAndStop(frame:String) : void {}
       
-      public function hurtFly(param1:Number, param2:Number) : void {}
+      public function hurtFly(x:Number, y:Number) : void {}
       
-      public function moveMC(param1:DisplayObject, param2:Object = null, param3:Object = null) : void {}
+      public function moveMC(mmc:DisplayObject, x:Object = null, y:Object = null) : void {}
       
-      public function justHitToPlay(param1:String, param2:String, param3:Boolean = false, param4:Boolean = false) : void {}
+      public function justHitToPlay(hitid:String, frame:String, noIdle:Boolean = false, inCludeDefense:Boolean = false) : void {}
       
-      public function getAttacker(param1:String) : FighterAttackerCtrler {}
+      public function getAttacker(name:String) : FighterAttackerCtrler {}
       
-      public function moveTarget(param1:Object = null) : void {}
+      public function moveTarget(params:Object = null) : void {}
       
       public function render() : void {}
       
@@ -175,7 +175,7 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function renderJumpAnimate() : void {}
       
-      public function beHit(param1:HitVO, param2:Rectangle = null) : void {}
+      public function beHit(hitvo:HitVO, hitRect:Rectangle = null) : void {}
       
       public function sayIntro() : void {}
       

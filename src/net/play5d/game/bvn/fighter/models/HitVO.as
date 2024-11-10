@@ -34,7 +34,7 @@ package net.play5d.game.bvn.fighter.models
       
       public var currentArea:Rectangle;
       
-      public function HitVO(param1:Object = null) {}
+      public function HitVO(o:Object = null) {}
       
       public function clone() : HitVO {}
       

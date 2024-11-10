@@ -17,7 +17,7 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public function TrainingCtrler() {}
       
-      public function initlize(param1:Array) : void {}
+      public function initlize(fighters:Array) : void {}
       
       public function destory() : void {}
       

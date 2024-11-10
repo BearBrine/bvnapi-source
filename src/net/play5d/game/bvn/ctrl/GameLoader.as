@@ -22,11 +22,11 @@ package net.play5d.game.bvn.ctrl
       
       public function GameLoader() {}
       
-      public static function loadFighter(param1:String, param2:Function, param3:Function = null, param4:Function = null, param5:Object = null) : void {}
+      public static function loadFighter(fighterId:String, back:Function, fail:Function = null, process:Function = null, customBackParam:Object = null) : void {}
       
-      public static function loadAssister(param1:String, param2:Function, param3:Function = null, param4:Function = null, param5:Object = null) : void {}
+      public static function loadAssister(fighterId:String, back:Function, fail:Function = null, process:Function = null, customBackParam:Object = null) : void {}
       
-      public static function loadMap(param1:String, param2:Function, param3:Function = null, param4:Function = null, param5:Object = null) : void {}
+      public static function loadMap(mapId:String, back:Function, fail:Function = null, process:Function = null, customBackParam:Object = null) : void {}
       
       public static function dispose() : void {}
    }

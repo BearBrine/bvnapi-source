@@ -25,27 +25,27 @@ package net.play5d.game.bvn.fighter
       
       public function get x() : Number {}
       
-      public function set x(param1:Number) : void {}
+      public function set x(v:Number) : void {}
       
       public function get y() : Number {}
       
-      public function set y(param1:Number) : void {}
+      public function set y(v:Number) : void {}
       
-      public function initlize(param1:MovieClip, param2:FighterMain, param3:FighterMcCtrler) : void {}
+      public function initlize(mc:MovieClip, fighter:FighterMain, mcCtrler:FighterMcCtrler) : void {}
       
       public function destory() : void {}
       
-      public function getChildByName(param1:String) : DisplayObject {}
+      public function getChildByName(name:String) : DisplayObject {}
       
       public function renderAnimate() : void {}
       
-      public function goFrame(param1:String, param2:Boolean = true, param3:int = 0, param4:Object = null) : void {}
+      public function goFrame(name:String, isPlay:Boolean = true, playFrame:int = 0, goFrameDelay:Object = null) : void {}
       
       public function stopRenderMainAnimate() : void {}
       
       public function resumeRenderMainAnimate() : void {}
       
-      public function checkFrame(param1:String) : Boolean {}
+      public function checkFrame(name:String) : Boolean {}
       
       public function getCurrentHitSprite() : Array {}
       
@@ -53,14 +53,14 @@ package net.play5d.game.bvn.fighter
       
       public function getCurrentHitArea() : Array {}
       
-      public function getCheckHitRect(param1:String) : Rectangle {}
+      public function getCheckHitRect(name:String) : Rectangle {}
       
-      public function playHurtFly(param1:Number, param2:Number, param3:Boolean = true) : void {}
+      public function playHurtFly(hitx:Number, hity:Number, showBeHit:Boolean = true) : void {}
       
       public function playHurtDown() : void {}
       
       public function stopHurtFly() : void {}
       
-      public function getHitRange(param1:String) : Rectangle {}
+      public function getHitRange(id:String) : Rectangle {}
    }
 }

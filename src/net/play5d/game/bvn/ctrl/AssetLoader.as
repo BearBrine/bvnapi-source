@@ -17,18 +17,18 @@ package net.play5d.game.bvn.ctrl
       
       public function AssetLoader() {}
       
-      public function loadXML(param1:String, param2:Function, param3:Function = null) : void {}
+      public function loadXML(url:String, back:Function, fail:Function = null) : void {}
       
-      public function loadSwf(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadSwf(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function loadBitmap(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadBitmap(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function loadSound(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadSound(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function dispose(param1:String) : void {}
+      public function dispose(url:String) : void {}
       
       public function needPreLoad() : Boolean {}
       
-      public function loadPreLoad(param1:Function, param2:Function = null, param3:Function = null) : void {}
+      public function loadPreLoad(back:Function, fail:Function = null, process:Function = null) : void {}
    }
 }

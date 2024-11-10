@@ -33,11 +33,11 @@ package net.play5d.game.bvn.ui.fight
       
       public function FightUI() {}
       
-      public function initlize(param1:GameRunFighterGroup, param2:GameRunFighterGroup) : void {}
+      public function initlize(p1:GameRunFighterGroup, p2:GameRunFighterGroup) : void {}
       
-      public function setVolume(param1:Number) : void {}
+      public function setVolume(v:Number) : void {}
       
-      public function showWins(param1:FighterMain, param2:int) : void {}
+      public function showWins(fighter:FighterMain, wins:int) : void {}
       
       public function destory() : void {}
       
@@ -47,17 +47,17 @@ package net.play5d.game.bvn.ui.fight
       
       public function renderAnimate() : void {}
       
-      public function fadIn(param1:Boolean = true) : void {}
+      public function fadIn(animate:Boolean = true) : void {}
       
-      public function fadOut(param1:Boolean = true) : void {}
+      public function fadOut(animate:Boolean = true) : void {}
       
-      public function showHits(param1:int, param2:int) : void {}
+      public function showHits(hits:int, id:int) : void {}
       
-      public function hideHits(param1:int) : void {}
+      public function hideHits(id:int) : void {}
       
-      public function showStart(param1:Function = null, param2:Object = null) : void {}
+      public function showStart(finishBack:Function = null, params:Object = null) : void {}
       
-      public function showEnd(param1:Function = null, param2:Object = null) : void {}
+      public function showEnd(finishBack:Function = null, params:Object = null) : void {}
       
       public function clearStartAndEnd() : void {}
       

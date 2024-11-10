@@ -8,8 +8,8 @@ package net.play5d.game.bvn.ui.fight
    public class FightScoreUI
    {
       
-      public function FightScoreUI(param1:*) {} //score_mc
+      public function FightScoreUI(ui:*) {} //score_mc
       
-      public function setScore(param1:int) : void {}
+      public function setScore(v:int) : void {}
    }
 }

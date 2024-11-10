@@ -9,6 +9,6 @@ package net.play5d.kyo.display.shapes
    {
       
       
-      public function Box(param1:Number, param2:Number, param3:int = 0, param4:Number = 1, param5:Point = null) {}
+      public function Box(width:Number, height:Number, color:int = 0, alpha:Number = 1, orgin:Point = null) {}
    }
 }

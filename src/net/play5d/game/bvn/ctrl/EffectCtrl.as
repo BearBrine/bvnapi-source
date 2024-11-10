@@ -48,74 +48,74 @@ package net.play5d.game.bvn.ctrl
       
       public function destory() : void {}
       
-      public function initlize(param1:GameState, param2:Sprite) : void {}
+      public function initlize(gameStage:GameState, effectLayer:Sprite) : void {}
       
       public function render() : void {}
       
-      public function doHitEffect(param1:HitVO, param2:Rectangle, param3:IGameSprite = null) : void {}
+      public function doHitEffect(hitvo:HitVO, hitRect:Rectangle, target:IGameSprite = null) : void {}
       
-      public function doDefenseEffect(param1:HitVO, param2:Rectangle, param3:int, param4:IGameSprite = null) : void {}
+      public function doDefenseEffect(hitvo:HitVO, hitRect:Rectangle, defenseType:int, target:IGameSprite = null) : void {}
       
-      public function doSteelHitEffect(param1:HitVO, param2:Rectangle, param3:IGameSprite) : void {}
+      public function doSteelHitEffect(hitvo:HitVO, hitRect:Rectangle, target:IGameSprite) : void {}
       
-      public function doEffectById(param1:String, param2:Number, param3:Number, param4:int = 1, param5:IGameSprite = null) : void {}
+      public function doEffectById(id:String, x:Number, y:Number, direct:int = 1, target:IGameSprite = null) : void {}
       
-      public function assisterEffect(param1:Assister) : void {}
+      public function assisterEffect(fz:Assister) : void {}
       
-      public function doEffectVO(param1:EffectVO, param2:Number, param3:Number, param4:int = 1, param5:IGameSprite = null) : void {}
+      public function doEffectVO(effect:EffectVO, ex:Number, ey:Number, direct:int = 1, target:IGameSprite = null) : void {}
       
-      public function doSpecialEffect(param1:String, param2:FighterMain) : void {}
+      public function doSpecialEffect(id:String, target:FighterMain) : void {}
       
-      public function doBuffEffect(param1:String, param2:FighterMain, param3:FighterBuffVO) : void {}
+      public function doBuffEffect(id:String, target:FighterMain, buff:FighterBuffVO) : void {}
       
-      public function freeze(param1:int) : void {}
+      public function freeze(time:int) : void {}
       
-      public function shine(param1:uint = 16777215, param2:Number = 0.2) : void {}
+      public function shine(color:uint = 16777215, alpha:Number = 0.2) : void {}
       
-      public function startShake(param1:Number, param2:Number) : void {}
+      public function startShake(sx:Number, sy:Number) : void {}
       
       public function endShake() : void {}
       
-      public function shake(param1:Number = 0, param2:Number = 3, param3:int = 500) : void {}
+      public function shake(powX:Number = 0, powY:Number = 3, time:int = 500) : void {}
       
-      public function startShadow(param1:DisplayObject, param2:int = 0, param3:int = 0, param4:int = 0) : void {}
+      public function startShadow(target:DisplayObject, r:int = 0, g:int = 0, b:int = 0) : void {}
       
-      public function endShadow(param1:DisplayObject) : void {}
+      public function endShadow(target:DisplayObject) : void {}
       
-      public function bisha(param1:BaseGameSprite, param2:Boolean = false, param3:DisplayObject = null) : void {}
+      public function bisha(target:BaseGameSprite, isSuper:Boolean = false, face:DisplayObject = null) : void {}
       
-      public function endBisha(param1:BaseGameSprite) : void {}
+      public function endBisha(target:BaseGameSprite) : void {}
       
-      public function wanKai(param1:FighterMain, param2:DisplayObject = null) : void {}
+      public function wanKai(target:FighterMain, face:DisplayObject = null) : void {}
       
-      public function endWanKai(param1:FighterMain) : void {}
+      public function endWanKai(target:FighterMain) : void {}
       
-      public function jumpEffect(param1:Number, param2:Number) : void {}
+      public function jumpEffect(x:Number, y:Number) : void {}
       
-      public function jumpAirEffect(param1:Number, param2:Number) : void {}
+      public function jumpAirEffect(x:Number, y:Number) : void {}
       
-      public function touchFloorEffect(param1:Number, param2:Number) : void {}
+      public function touchFloorEffect(x:Number, y:Number) : void {}
       
-      public function hitFloorEffect(param1:int, param2:Number, param3:Number) : void {}
+      public function hitFloorEffect(type:int, x:Number, y:Number) : void {}
       
-      public function slowDown(param1:Number, param2:int = 1000) : void {}
+      public function slowDown(rate:Number, time:int = 1000) : void {}
       
       public function slowDownResume() : void {}
       
-      public function BGEffect(param1:String, param2:Number = -1) : void {}
+      public function BGEffect(id:String, hold:Number = -1) : void {}
       
-      public function setOnFreezeOver(param1:Function) : void {}
+      public function setOnFreezeOver(v:Function) : void {}
       
-      public function replaceSkill(param1:BaseGameSprite) : void {}
+      public function replaceSkill(target:BaseGameSprite) : void {}
       
-      public function energyExplode(param1:BaseGameSprite) : void {}
+      public function energyExplode(target:BaseGameSprite) : void {}
       
-      public function ghostStep(param1:BaseGameSprite) : void {}
+      public function ghostStep(target:BaseGameSprite) : void {}
       
-      public function endGhostStep(param1:BaseGameSprite) : void {}
+      public function endGhostStep(target:BaseGameSprite) : void {}
       
-      public function startFilter(param1:BaseGameSprite, param2:BitmapFilter, param3:Point = null) : void {}
+      public function startFilter(target:BaseGameSprite, filter:BitmapFilter, filterOffset:Point = null) : void {}
       
-      public function endFilter(param1:BaseGameSprite) : void {}
+      public function endFilter(target:BaseGameSprite) : void {}
    }
 }

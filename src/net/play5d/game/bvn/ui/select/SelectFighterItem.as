@@ -23,9 +23,9 @@ package net.play5d.game.bvn.ui.select
       
       public var position:Point;
       
-      public function SelectFighterItem(param1:FighterVO, param2:SelectCharListItemVO) {}
+      public function SelectFighterItem(fighterData:FighterVO, selectData:SelectCharListItemVO) {}
       
-      override public function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void {}
+      override public function addEventListener(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false) : void {}
       
       public function removeAllEventListener() : void {}
       

@@ -12,12 +12,12 @@ package net.play5d.game.bvn.data
       
       public function clear() : void {}
       
-      public function getTeam(param1:int) : TeamVO {}
+      public function getTeam(id:int) : TeamVO {}
       
-      public function getOtherTeams(param1:int) : Vector.<TeamVO> {}
+      public function getOtherTeams(id:int) : Vector.<TeamVO> {}
       
-      public function add(param1:TeamVO) : void {}
+      public function add(v:TeamVO) : void {}
       
-      public function remove(param1:TeamVO) : void {}
+      public function remove(v:TeamVO) : void {}
    }
 }

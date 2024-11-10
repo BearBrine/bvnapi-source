@@ -11,11 +11,11 @@ package net.play5d.game.bvn.views.effects
    public class BuffEffectView extends EffectView
    {
       
-      public function BuffEffectView(param1:EffectVO) {}
+      public function BuffEffectView(data:EffectVO) {}
       
-      public function setBuff(param1:FighterBuffVO) : void {}
+      public function setBuff(v:FighterBuffVO) : void {}
       
-      override public function setTarget(param1:IGameSprite) : void {}
+      override public function setTarget(v:IGameSprite) : void {}
       
       override public function render() : void {}
    }

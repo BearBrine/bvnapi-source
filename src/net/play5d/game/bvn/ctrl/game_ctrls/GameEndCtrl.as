@@ -15,7 +15,7 @@ package net.play5d.game.bvn.ctrl.game_ctrls
       
       public function GameEndCtrl() {}
       
-      public function initlize(param1:FighterMain, param2:FighterMain) : void {}
+      public function initlize(winner:FighterMain, loser:FighterMain) : void {}
       
       public function drawGame() : void {}
       

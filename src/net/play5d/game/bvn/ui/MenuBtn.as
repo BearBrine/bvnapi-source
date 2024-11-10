@@ -31,9 +31,9 @@ package net.play5d.game.bvn.ui
       
       public var children:Array;
       
-      public function MenuBtn(param1:String, param2:String = "", param3:Function = null) {}
+      public function MenuBtn(label:String, cn:String = "", func:Function = null) {}
       
-      override public function addEventListener(param1:String, param2:Function, param3:Boolean = false, param4:int = 0, param5:Boolean = false) : void {}
+      override public function addEventListener(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false) : void {}
       
       public function removeAllEventListener() : void {}
       
@@ -43,7 +43,7 @@ package net.play5d.game.bvn.ui
       
       public function normal() : void {}
       
-      public function select(param1:Function = null) : void {}
+      public function select(back:Function = null) : void {}
       
       public function openChild() : void {}
       

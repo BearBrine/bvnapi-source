@@ -15,8 +15,8 @@ package net.play5d.game.bvn.fighter.ctrler
       
       public function destory() : void {}
       
-      public function setVoice(param1:int, param2:Array) : void {}
+      public function setVoice(id:int, sounds:Array) : void {}
       
-      public function playVoice(param1:int, param2:Number = 1) : void {}
+      public function playVoice(id:int, rate:Number = 1) : void {}
    }
 }

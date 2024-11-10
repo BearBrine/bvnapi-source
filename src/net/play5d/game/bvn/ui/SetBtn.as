@@ -17,7 +17,7 @@ package net.play5d.game.bvn.ui
       
       public var onSelect:Function;
       
-      public function SetBtn(param1:String, param2:String) {}
+      public function SetBtn(label:String, cn:String) {}
       
       public function get label() : String {}
       
@@ -29,7 +29,7 @@ package net.play5d.game.bvn.ui
       
       public function select() : void {}
       
-      public function setOption(param1:Array) : void {}
+      public function setOption(arr:Array) : void {}
       
       public function getOption() : Object {}
       
@@ -37,6 +37,6 @@ package net.play5d.game.bvn.ui
       
       public function prevOption() : void {}
       
-      public function setOptionByValue(param1:Object) : void {}
+      public function setOptionByValue(value:Object) : void {}
    }
 }

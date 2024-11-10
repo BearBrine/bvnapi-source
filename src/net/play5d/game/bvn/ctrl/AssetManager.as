@@ -27,38 +27,38 @@ package net.play5d.game.bvn.ctrl
       
       public static function get I() : AssetManager {}
       
-      public function getFont(param1:String) : BitmapFont {}
+      public function getFont(id:String) : BitmapFont {}
       
-      public function setAssetLoader(param1:IAssetLoader) : void {}
+      public function setAssetLoader(v:IAssetLoader) : void {}
       
-      public function loadBasic(param1:Function, param2:Function = null) : void {}
+      public function loadBasic(back:Function, process:Function = null) : void {}
       
-      public function getEffect(param1:String) : * {}
+      public function getEffect(className:String) : * {}
       
-      public function getSound(param1:String) : Sound {}
+      public function getSound(name:String) : Sound {}
       
-      public function getFighterFace(param1:FighterVO, param2:Point = null) : DisplayObject {}
+      public function getFighterFace(fv:FighterVO, size:Point = null) : DisplayObject {}
       
-      public function getFighterFaceBig(param1:FighterVO, param2:Point = null) : DisplayObject {}
+      public function getFighterFaceBig(fv:FighterVO, size:Point = null) : DisplayObject {}
       
-      public function getFighterFaceBar(param1:FighterVO, param2:Point = null) : DisplayObject {}
+      public function getFighterFaceBar(fv:FighterVO, size:Point = null) : DisplayObject {}
       
-      public function getFighterFaceWin(param1:FighterVO, param2:Point = null) : DisplayObject {}
+      public function getFighterFaceWin(fv:FighterVO, size:Point = null) : DisplayObject {}
       
-      public function getMapPic(param1:MapVO, param2:Point = null) : DisplayObject {}
+      public function getMapPic(mv:MapVO, size:Point = null) : DisplayObject {}
       
-      public function loadXML(param1:String, param2:Function, param3:Function) : void {}
+      public function loadXML(url:String, back:Function, fail:Function) : void {}
       
-      public function loadSWF(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadSWF(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function loadSound(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadSound(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function loadBitmap(param1:String, param2:Function, param3:Function = null, param4:Function = null) : void {}
+      public function loadBitmap(url:String, back:Function, fail:Function = null, process:Function = null) : void {}
       
-      public function disposeAsset(param1:String) : void {}
+      public function disposeAsset(url:String) : void {}
       
       public function needPreLoad() : Boolean {}
       
-      public function loadPreLoad(param1:Function, param2:Function = null, param3:Function = null) : void {}
+      public function loadPreLoad(back:Function, fail:Function = null, process:Function = null) : void {}
    }
 }

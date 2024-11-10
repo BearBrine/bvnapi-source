@@ -37,19 +37,19 @@ package net.play5d.game.bvn.ui.select
       
       public function getOrder() : Array {}
       
-      public function setFighterScale(param1:Number) : void {}
+      public function setFighterScale(v:Number) : void {}
       
-      public function setOrder(param1:Array) : void {}
+      public function setOrder(v:Array) : void {}
       
       public function destory() : void {}
       
-      public function build(param1:Class, param2:SelectVO) : void {}
+      public function build(itemUIClass:Class, selectVO:SelectVO) : void {}
       
-      public function initArrow(param1:DisplayObject, param2:Point) : void {}
+      public function initArrow(arrowUI:DisplayObject, offset:Point) : void {}
       
-      public function selectIndex(param1:int, param2:int = 0) : void {}
+      public function selectIndex(index:int, direct:int = 0) : void {}
       
-      public function setKey(param1:String) : void {}
+      public function setKey(inputType:String) : void {}
       
       public function autoSelect() : void {}
    }

@@ -10,7 +10,7 @@ package net.play5d.game.bvn.ui.fight
    public class FightTimeUI
    {
       
-      public function FightTimeUI(param1:*) {} //time_mc
+      public function FightTimeUI(ui:*) {} //time_mc
       
       public function get timeUI() : DisplayObject {}
       

@@ -30,6 +30,6 @@ package net.play5d.game.bvn.data
       
       public function HitType() {}
       
-      public static function isHeavy(param1:int) : Boolean {}
+      public static function isHeavy(v:int) : Boolean {}
    }
 }

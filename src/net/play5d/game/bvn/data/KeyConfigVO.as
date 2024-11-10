@@ -32,13 +32,13 @@ package net.play5d.game.bvn.data
       
       public var selects:Array;
       
-      public function KeyConfigVO(param1:int) {}
+      public function KeyConfigVO(id:int) {}
       
-      public function setKeys(param1:uint, param2:uint, param3:uint, param4:uint, param5:uint, param6:uint, param7:uint, param8:uint, param9:uint, param10:uint) : void {}
+      public function setKeys(up:uint, down:uint, left:uint, right:uint, attack:uint, jump:uint, dash:uint, skill:uint, superKill:uint, beckons:uint) : void {}
       
       public function toSaveObj() : Object {}
       
-      public function readSaveObj(param1:Object) : void {}
+      public function readSaveObj(o:Object) : void {}
       
       public function clone() : KeyConfigVO {}
    }

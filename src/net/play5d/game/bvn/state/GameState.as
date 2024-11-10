@@ -34,38 +34,38 @@ package net.play5d.game.bvn.state
       
       public function getMap() : MapMain {}
       
-      public function setVisibleByClass(param1:Class, param2:*) : void {}
+      public function setVisibleByClass(cls:Class, visible:*) : void {}
       
       public function get display() : DisplayObject {}
       
-      public function getGameSpriteGlobalPosition(param1:IGameSprite, param2:Number = 0, param3:Number = 0) : Point {}
+      public function getGameSpriteGlobalPosition(sp:IGameSprite, offsetX:Number = 0, offsetY:Number = 0) : Point {}
       
       public function getGameSprites() : Vector.<IGameSprite> {}
       
-      public function addGameSprite(param1:IGameSprite) : void {}
+      public function addGameSprite(sp:IGameSprite) : void {}
       
-      public function addGameSpriteAt(param1:IGameSprite, param2:int) : void {}
+      public function addGameSpriteAt(sp:IGameSprite, index:int) : void {}
       
-      public function removeGameSprite(param1:IGameSprite) : void {}
+      public function removeGameSprite(sp:IGameSprite) : void {}
       
       public function build() : void {}
       
-      public function initFight(param1:GameRunFighterGroup, param2:GameRunFighterGroup, param3:MapMain) : void {}
+      public function initFight(p1group:GameRunFighterGroup, p2group:GameRunFighterGroup, map:MapMain) : void {}
       
-      public function resetFight(param1:GameRunFighterGroup, param2:GameRunFighterGroup) : void {}
+      public function resetFight(p1group:GameRunFighterGroup, p2group:GameRunFighterGroup) : void {}
       
-      public function cameraFocusOne(param1:DisplayObject) : void {}
+      public function cameraFocusOne(display:DisplayObject) : void {}
       
       public function cameraResume() : void {}
       
       public function render() : void {}
       
-      public function drawGameRect(param1:Rectangle, param2:uint = 16711680, param3:Number = 0.5, param4:Boolean = false) : void {}
+      public function drawGameRect(rect:Rectangle, color:uint = 16711680, alpha:Number = 0.5, clear:Boolean = false) : void {}
       
       public function clearDrawGameRect() : void {}
       
       public function afterBuild() : void {}
       
-      public function destory(param1:Function = null) : void {}
+      public function destory(back:Function = null) : void {}
    }
 }

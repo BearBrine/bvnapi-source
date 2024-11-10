@@ -34,7 +34,7 @@ package net.play5d.game.bvn.fighter
       
       public var rangeY:Point;
       
-      public function FighterAttacker(param1:MovieClip, param2:Object = null) {}
+      public function FighterAttacker(mainmc:MovieClip, params:Object = null) {}
       
       public function getOwner() : IGameSprite {}
       
@@ -42,9 +42,9 @@ package net.play5d.game.bvn.fighter
       
       public function getCtrler() : FighterAttackerCtrler {}
       
-      override public function destory(param1:Boolean = true) : void {}
+      override public function destory(dispose:Boolean = true) : void {}
       
-      public function setOwner(param1:IGameSprite) : void {}
+      public function setOwner(v:IGameSprite) : void {}
       
       public function init() : void {}
       
@@ -54,13 +54,13 @@ package net.play5d.game.bvn.fighter
       
       public function stopFollowTarget() : void {}
       
-      public function moveToTarget(param1:Number = NaN, param2:Number = NaN) : void {}
+      public function moveToTarget(offsetX:Number = NaN, offsetY:Number = NaN) : void {}
       
       public function stop() : void {}
       
-      public function gotoAndPlay(param1:String) : void {}
+      public function gotoAndPlay(frame:String) : void {}
       
-      public function gotoAndStop(param1:String) : void {}
+      public function gotoAndStop(frame:String) : void {}
       
       public function getTargets() : Vector.<IGameSprite> {}
       
@@ -68,10 +68,10 @@ package net.play5d.game.bvn.fighter
       
       override public function getCurrentHits() : Array {}
       
-      public function getHitCheckRect(param1:String) : Rectangle {}
+      public function getHitCheckRect(name:String) : Rectangle {}
       
-      public function getCheckHitRect(param1:String) : Rectangle {}
+      public function getCheckHitRect(name:String) : Rectangle {}
       
-      override public function hit(param1:HitVO, param2:IGameSprite) : void {}
+      override public function hit(hitvo:HitVO, target:IGameSprite) : void {}
    }
 }

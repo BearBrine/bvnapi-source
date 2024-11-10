@@ -18,7 +18,7 @@ package net.play5d.game.bvn.ui.fight
    public class FightBar
    {
       
-      public function FightBar(param1:*) {} //hpbar_mc
+      public function FightBar(ui:*) {} //hpbar_mc
       
       public function get ui() : DisplayObject {}
       
@@ -26,17 +26,17 @@ package net.play5d.game.bvn.ui.fight
       
       public function initScore() : void {}
       
-      public function setScore(param1:int) : void {}
+      public function setScore(v:int) : void {}
       
-      public function showWin(param1:FighterMain, param2:int) : void {}
+      public function showWin(fighter:FighterMain, wins:int) : void {}
       
-      public function setFighter(param1:GameRunFighterGroup = null, param2:GameRunFighterGroup = null) : void {}
+      public function setFighter(p1:GameRunFighterGroup = null, p2:GameRunFighterGroup = null) : void {}
       
       public function render() : void {}
       
-      public function fadIn(param1:Boolean) : void {}
+      public function fadIn(animate:Boolean) : void {}
       
-      public function fadOut(param1:Boolean) : void {}
+      public function fadOut(animate:Boolean) : void {}
       
       public function renderAnimate() : void {}
    }

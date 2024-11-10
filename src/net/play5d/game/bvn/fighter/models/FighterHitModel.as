@@ -7,20 +7,20 @@ package net.play5d.game.bvn.fighter.models
    public class FighterHitModel
    {
       
-      public function FighterHitModel(param1:IGameSprite) {}
+      public function FighterHitModel(fighter:IGameSprite) {}
       
       public function destory() : void {}
       
       public function clear() : void {}
       
-      public function getHitVO(param1:String) : HitVO {}
+      public function getHitVO(id:String) : HitVO {}
       
-      public function getHitVOLike(param1:String) : Vector.<HitVO> {}
+      public function getHitVOLike(likeId:String) : Vector.<HitVO> {}
       
-      public function getHitVOByDisplayName(param1:String) : HitVO {}
+      public function getHitVOByDisplayName(name:String) : HitVO {}
       
-      public function addHitVO(param1:String, param2:Object) : void {}
+      public function addHitVO(id:String, obj:Object) : void {}
       
-      public function setPowerRate(param1:Number) : void {}
+      public function setPowerRate(v:Number) : void {}
    }
 }

@@ -19,11 +19,11 @@ package net.play5d.game.bvn.views.effects
       
       public var target:BaseGameSprite;
       
-      public function BitmapFilterView(param1:BaseGameSprite, param2:BitmapFilter, param3:Point = null) {}
+      public function BitmapFilterView(target:BaseGameSprite, filter:BitmapFilter, filterOffset:Point = null) {}
       
-      public function setVolume(param1:Number) : void {}
+      public function setVolume(v:Number) : void {}
       
-      public function update(param1:BitmapFilter, param2:Point = null) : void {}
+      public function update(filter:BitmapFilter, filterOffset:Point = null) : void {}
       
       public function renderAnimate() : void {}
       
@@ -35,23 +35,23 @@ package net.play5d.game.bvn.views.effects
       
       public function get direct() : int {}
       
-      public function set direct(param1:int) : void {}
+      public function set direct(value:int) : void {}
       
       public function get x() : Number {}
       
-      public function set x(param1:Number) : void {}
+      public function set x(v:Number) : void {}
       
       public function get y() : Number {}
       
-      public function set y(param1:Number) : void {}
+      public function set y(v:Number) : void {}
       
       public function get team() : TeamVO {}
       
-      public function set team(param1:TeamVO) : void {}
+      public function set team(v:TeamVO) : void {}
       
-      public function hit(param1:HitVO, param2:IGameSprite) : void {}
+      public function hit(hitvo:HitVO, target:IGameSprite) : void {}
       
-      public function beHit(param1:HitVO, param2:Rectangle = null) : void {}
+      public function beHit(hitvo:HitVO, hitRect:Rectangle = null) : void {}
       
       public function getArea() : Rectangle {}
       
@@ -65,10 +65,10 @@ package net.play5d.game.bvn.views.effects
       
       public function getIsTouchSide() : Boolean {}
       
-      public function setIsTouchSide(param1:Boolean) : void {}
+      public function setIsTouchSide(v:Boolean) : void {}
       
-      public function setSpeedRate(param1:Number) : void {}
+      public function setSpeedRate(v:Number) : void {}
       
-      public function destory(param1:Boolean = true) : void {}
+      public function destory(dispose:Boolean = true) : void {}
    }
 }

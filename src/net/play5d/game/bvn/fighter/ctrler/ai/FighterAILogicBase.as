@@ -25,11 +25,11 @@ package net.play5d.game.bvn.fighter.ctrler.ai
       
       protected var _isConting:Boolean;
       
-      public function FighterAILogicBase(param1:int, param2:FighterMain) {}
+      public function FighterAILogicBase(AILevel:int, fighter:FighterMain) {}
       
       public function destory() : void {}
       
-      protected function addContOrder(param1:String, param2:int) : void {}
+      protected function addContOrder(id:String, order:int) : void {}
       
       protected function updateConting() : void {}
       
@@ -37,21 +37,21 @@ package net.play5d.game.bvn.fighter.ctrler.ai
       
       protected function updateActionAI() : void {}
       
-      protected function getAIByFighterState(param1:Object) : Boolean {}
+      protected function getAIByFighterState(stateObj:Object) : Boolean {}
       
-      protected function getAIResult(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number) : Boolean {}
+      protected function getAIResult(a1:Number, a2:Number, a3:Number, a4:Number, a5:Number, a6:Number) : Boolean {}
       
-      protected function getTargetDistance(param1:IGameSprite) : Point {}
+      protected function getTargetDistance(target:IGameSprite) : Point {}
       
-      protected function targetInDistance(param1:IGameSprite, param2:Number, param3:Number) : Boolean {}
+      protected function targetInDistance(target:IGameSprite, disX:Number, disY:Number) : Boolean {}
       
-      protected function targetInRange(param1:String) : Boolean {}
+      protected function targetInRange(id:String) : Boolean {}
       
-      protected function mergeRateObject(param1:Object, param2:Object) : void {}
+      protected function mergeRateObject(oldObj:Object, newObj:Object) : void {}
       
-      protected function isBreakAct(param1:String) : Boolean {}
+      protected function isBreakAct(hitId:String) : Boolean {}
       
-      protected function isHitDownAct(param1:String) : Boolean {}
+      protected function isHitDownAct(hitId:String) : Boolean {}
       
       protected function targetCanBeHit() : Boolean {}
    }

@@ -19,9 +19,9 @@ package net.play5d.game.bvn.utils
       
       public function destory() : void {}
       
-      public function getEffectVOByHitVO(param1:HitVO) : EffectVO {}
+      public function getEffectVOByHitVO(hitvo:HitVO) : EffectVO {}
       
-      public function getEffectView(param1:EffectVO) : EffectView {}
+      public function getEffectView(data:EffectVO) : EffectView {}
       
       public function getShine() : ShineEffectView {}
    }

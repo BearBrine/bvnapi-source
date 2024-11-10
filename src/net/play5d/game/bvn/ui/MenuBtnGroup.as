@@ -30,14 +30,14 @@ package net.play5d.game.bvn.ui
       
       public function destory() : void {}
       
-      public function fadIn(param1:Number = 0.5, param2:Number = 0.05) : void {}
+      public function fadIn(duration:Number = 0.5, itemDelay:Number = 0.05) : void {}
       
       public function build() : void {}
       
-      protected function mouseHandler(param1:String, param2:MenuBtn) : void {}
+      protected function mouseHandler(type:String, target:MenuBtn) : void {}
       
-      protected function touchHandler(param1:String, param2:MenuBtn) : void {}
+      protected function touchHandler(type:String, target:MenuBtn) : void {}
       
-      protected function selectBtn(param1:MenuBtn) : void {}
+      protected function selectBtn(target:MenuBtn) : void {}
    }
 }

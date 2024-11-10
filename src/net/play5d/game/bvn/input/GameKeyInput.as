@@ -12,13 +12,13 @@ package net.play5d.game.bvn.input
       
       public function GameKeyInput() {}
       
-      public function initlize(param1:Stage) : void {}
+      public function initlize(stage:Stage) : void {}
       
       public function get enabled() : Boolean {}
       
-      public function set enabled(param1:Boolean) : void {}
+      public function set enabled(v:Boolean) : void {}
       
-      public function setConfig(param1:Object) : void {}
+      public function setConfig(config:Object) : void {}
       
       public function focus() : void {}
       

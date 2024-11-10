@@ -54,32 +54,32 @@ package com.greensock
       
       protected var _notifyPluginsOfEnabled:Boolean;
       
-      public function TweenLite(param1:Object, param2:Number, param3:Object) {}
+      public function TweenLite(target:Object, duration:Number, vars:Object) {}
       
       public static function initClass() : void {}
       
-      public static function to(param1:Object, param2:Number, param3:Object) : TweenLite {}
+      public static function to(target:Object, duration:Number, vars:Object) : TweenLite {}
       
-      public static function from(param1:Object, param2:Number, param3:Object) : TweenLite {}
+      public static function from(target:Object, duration:Number, vars:Object) : TweenLite {}
       
-      public static function delayedCall(param1:Number, param2:Function, param3:Array = null, param4:Boolean = false) : TweenLite {}
+      public static function delayedCall(delay:Number, onComplete:Function, onCompleteParams:Array = null, useFrames:Boolean = false) : TweenLite {}
       
-      protected static function updateAll(param1:Event = null) : void {}
+      protected static function updateAll(e:Event = null) : void {}
       
-      public static function killTweensOf(param1:Object, param2:Boolean = false, param3:Object = null) : void {}
+      public static function killTweensOf(target:Object, complete:Boolean = false, vars:Object = null) : void {}
       
-      protected static function easeOut(param1:Number, param2:Number, param3:Number, param4:Number) : Number {}
+      protected static function easeOut(t:Number, b:Number, c:Number, d:Number) : Number {}
       
       protected function init() : void {}
       
-      override public function renderTime(param1:Number, param2:Boolean = false, param3:Boolean = false) : void {}
+      override public function renderTime(time:Number, suppressEvents:Boolean = false, force:Boolean = false) : void {}
       
-      public function killVars(param1:Object, param2:Boolean = true) : Boolean {}
+      public function killVars(vars:Object, permanent:Boolean = true) : Boolean {}
       
       override public function invalidate() : void {}
       
-      override public function setEnabled(param1:Boolean, param2:Boolean = false) : Boolean {}
+      override public function setEnabled(enabled:Boolean, ignoreTimeline:Boolean = false) : Boolean {}
       
-      protected function easeProxy(param1:Number, param2:Number, param3:Number, param4:Number) : Number {}
+      protected function easeProxy(t:Number, b:Number, c:Number, d:Number) : Number {}
    }
 }

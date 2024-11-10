@@ -11,13 +11,13 @@ package net.play5d.game.bvn.ctrl.game_ctrls
    public class GameStartCtrl
    {
       
-      public function GameStartCtrl(param1:GameState) {}
+      public function GameStartCtrl(state:GameState) {}
       
       public function destory() : void {}
       
       public function render() : Boolean {}
       
-      public function start1v1(param1:FighterMain, param2:FighterMain, param3:int = -1) : void {}
+      public function start1v1(p1:FighterMain, p2:FighterMain, introTeamId:int = -1) : void {}
       
       public function startNextRound() : void {}
       

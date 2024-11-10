@@ -45,13 +45,13 @@ package net.play5d.game.bvn.utils
       
       public static function get I() : ResUtils {}
       
-      public function initalize(param1:Function = null, param2:Function = null) : void {}
+      public function initalize(back:Function = null, error:Function = null) : void {}
       
-      public function createDisplayObject(param1:Class, param2:String) : * {}
+      public function createDisplayObject(embedSwf:Class, itemName:String) : * {}
       
-      public function createBitmapData(param1:Class, param2:String, param3:int, param4:int) : BitmapData {}
+      public function createBitmapData(embedSwf:Class, itemName:String, width:int, height:int) : BitmapData {}
       
-      public function getItemClass(param1:Class, param2:String) : Class {}
+      public function getItemClass(embedSwf:Class, itemName:String) : Class {}
    }
 }
 
@@ -71,7 +71,7 @@ class InsSwf
    
    public var error:Function;
    
-   public function InsSwf(param1:Class) {}
+   public function InsSwf(swfClass:Class) {}
    
-   public function getClass(param1:String) : Class {}
+   public function getClass(name:String) : Class {}
 }

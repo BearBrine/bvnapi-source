@@ -10,13 +10,13 @@ package net.play5d.kyo.display.bitmap
    public class BitmapFontText extends Bitmap
    {
       
-      public function BitmapFontText(param1:BitmapFont) {}
+      public function BitmapFontText(font:BitmapFont) {}
       
       public function get text() : String {}
       
-      public function set text(param1:String) : void {}
+      public function set text(v:String) : void {}
       
-      public function colorTransform(param1:ColorTransform) : void {}
+      public function colorTransform(ct:ColorTransform) : void {}
       
       public function dispose() : void {}
    }

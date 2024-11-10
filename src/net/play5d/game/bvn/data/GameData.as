@@ -28,14 +28,14 @@ package net.play5d.game.bvn.data
       
       public static function get I() : GameData {}
       
-      public function loadConfig(param1:Function, param2:Function = null) : void {}
+      public function loadConfig(back:Function, fail:Function = null) : void {}
       
       public function saveData() : void {}
       
       public function loadData() : void {}
       
-      public function loadSelect(param1:String) : void {}
+      public function loadSelect(url:String) : void {}
       
-      public function setSelectData(param1:XML) : void {}
+      public function setSelectData(xml:XML) : void {}
    }
 }

@@ -16,6 +16,6 @@ package net.play5d.game.bvn.data
       
       public var offset:Point;
       
-      public function SelectCharListItemVO(param1:int, param2:int, param3:String, param4:Point = null) {}
+      public function SelectCharListItemVO(x:int, y:int, fighterID:String, offset:Point = null) {}
    }
 }

@@ -53,7 +53,7 @@ package net.play5d.game.bvn.state
       
       public function get p2SelectFinish() : Boolean {}
       
-      public function setSelect(param1:int, param2:Array) : void {}
+      public function setSelect(player:int, selects:Array) : void {}
       
       public function nextStep() : void {}
       
@@ -61,6 +61,6 @@ package net.play5d.game.bvn.state
       
       public function afterBuild() : void {}
       
-      public function destory(param1:Function = null) : void {}
+      public function destory(back:Function = null) : void {}
    }
 }

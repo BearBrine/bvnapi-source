@@ -14,22 +14,22 @@ package net.play5d.kyo.stage
       
       public var changeStateMouseGap:int = 0;
       
-      public function KyoStageCtrl(param1:Sprite) {}
+      public function KyoStageCtrl(mainStage:Sprite) {}
       
       public function get currentStage() : Istage {}
       
-      public function goStage(param1:Istage, param2:Boolean = false, param3:Boolean = false) : Boolean {}
+      public function goStage(stg:Istage, sameChange:Boolean = false, buildAfterDestory:Boolean = false) : Boolean {}
       
-      public function addLayer(param1:Istage, param2:Number = 0, param3:Number = 0, param4:Boolean = false, param5:IStageFadEffect = null, param6:Function = null) : void {}
+      public function addLayer(layer:Istage, x:Number = 0, y:Number = 0, removeElse:Boolean = false, effect:IStageFadEffect = null, addBack:Function = null) : void {}
       
-      public function hasLayer(param1:Object) : Boolean {}
+      public function hasLayer(layer:Object) : Boolean {}
       
       public function get noneLayer() : Boolean {}
       
-      public function removeLayer(param1:Istage, param2:IStageFadEffect = null, param3:Function = null) : void {}
+      public function removeLayer(layer:Istage, effect:IStageFadEffect = null, removeBack:Function = null) : void {}
       
       public function removeAllLayer() : void {}
       
-      public function clean(param1:Boolean = true) : void {}
+      public function clean(_removeAllLayer:Boolean = true) : void {}
    }
 }

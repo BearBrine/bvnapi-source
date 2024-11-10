@@ -9,12 +9,12 @@ package net.play5d.game.bvn.ui.select
    public class SelectedFighterGroup extends Sprite
    {
       
-      public function SelectedFighterGroup(param1:Class) {}
+      public function SelectedFighterGroup(uiClass:Class) {}
       
       public function destory() : void {}
       
-      public function addFighter(param1:FighterVO) : void {}
+      public function addFighter(vo:FighterVO) : void {}
       
-      public function updateFighter(param1:FighterVO) : void {}
+      public function updateFighter(vo:FighterVO) : void {}
    }
 }

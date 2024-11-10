@@ -16,6 +16,6 @@ package net.play5d.game.bvn.map
       
       public function toString() : String {}
       
-      public function hitTest(param1:Number, param2:Number, param3:Number) : Boolean {}
+      public function hitTest(X:Number, Y:Number, SPEED:Number) : Boolean {}
    }
 }

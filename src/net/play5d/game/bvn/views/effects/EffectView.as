@@ -29,17 +29,17 @@ package net.play5d.game.bvn.views.effects
       
       protected var _data:EffectVO;
       
-      public function EffectView(param1:EffectVO) {}
+      public function EffectView(data:EffectVO) {}
       
-      public function setTarget(param1:IGameSprite) : void {}
+      public function setTarget(v:IGameSprite) : void {}
       
-      public function setPos(param1:Number, param2:Number) : void {}
+      public function setPos(x:Number, y:Number) : void {}
       
-      public function start(param1:Number = 0, param2:Number = 0, param3:int = 1) : void {}
+      public function start(x:Number = 0, y:Number = 0, direct:int = 1) : void {}
       
       public function destory() : void {}
       
-      public function gotoAndPlay(param1:Object) : void {}
+      public function gotoAndPlay(frame:Object) : void {}
       
       public function render() : void {}
       
@@ -47,6 +47,6 @@ package net.play5d.game.bvn.views.effects
       
       public function remove() : void {}
       
-      public function addRemoveBack(param1:Function) : void {}
+      public function addRemoveBack(func:Function) : void {}
    }
 }

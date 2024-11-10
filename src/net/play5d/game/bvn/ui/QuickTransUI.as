@@ -12,10 +12,10 @@ package net.play5d.game.bvn.ui
       
       public function QuickTransUI() {}
       
-      public function fadInAndOut(param1:Function = null) : void {}
+      public function fadInAndOut(back:Function = null) : void {}
       
-      public function fadIn(param1:Function = null) : void {}
+      public function fadIn(back:Function = null) : void {}
       
-      public function fadOut(param1:Function = null) : void {}
+      public function fadOut(back:Function = null) : void {}
    }
 }
