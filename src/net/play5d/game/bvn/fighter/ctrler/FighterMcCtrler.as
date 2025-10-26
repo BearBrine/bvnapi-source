@@ -274,9 +274,9 @@ package net.play5d.game.bvn.fighter.ctrler
        * <p>具体来说这个方法相当于执行了如下操作：</p>
        *
        * <ul>
-       * <li>使人物按基础速度的 speedPlus 倍速度进行x轴移动，y轴速度为0，同时设置阻力为0。</li>
-       * <li>使人物可以穿透</li>
-       * <li>使人物无敌</li>
+       * <li>让人物以基础速度的 speedPlus 倍沿x轴移动，y轴速度设为0，并将阻力设为0。</li>
+       * <li>使人物进入穿透状态（可以穿过其它人物）。</li>
+       * <li>使人物无敌。</li>
        * </ul>
        *
        * @param speedPlus x轴移动速度倍率。
@@ -288,6 +288,28 @@ package net.play5d.game.bvn.fighter.ctrler
        */
       public function dash(speedPlus:Number = 3) : void {}
       
+      /**
+       * 结束瞬步.
+       * 
+       * <p>一般来说你只需要写在瞬步结尾，任意设置下阻力数值看看就行了。</p>
+       * 
+       * <p>具体来说这个方法相当于执行了如下操作：</p>
+       * 
+       * <ul>
+       * <li>设置人物x轴阻力为 loseSpdPercent * 人物当前速度，也就是 1 / loseSpdPercent 帧后停止运动</li>
+       * <li>使人物退出穿透状态（不能穿过其它人物）。</li>
+       * <li>取消人物无敌。</li>
+       * <li>清空人物纽带。</li>
+       * <li>设置人物动作状态（actionState）为0（通常状态）。</li>
+       * </ul>
+       * 
+       * @param loseSpdPercent 停止运动时人物的x轴阻力倍率。
+       * 
+       * @example
+       * <listing version="3.0">
+       * parent.$mc_ctrler.dashStop(0.25);
+       * </listing>
+       */
       public function dashStop(loseSpdPercent:Number = 0.5) : void {}
       
       public function setAllAct() : void {}
