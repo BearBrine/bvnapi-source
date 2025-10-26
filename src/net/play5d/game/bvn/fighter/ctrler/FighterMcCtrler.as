@@ -41,7 +41,7 @@ package net.play5d.game.bvn.fighter.ctrler
       public function getCurAction() : String {}
 
       /**
-       * <p>获取人物动作控制器,用于获取玩家或AI执行了什么动作（类似检测按下的按键但并不完全是）。</p>
+       * 获取人物动作控制器，用于获取玩家或AI执行了什么动作（类似检测按下的按键但并不完全是）.
        * 
        * <p><b>注意：</b>此方法在 BVN 3.3 版本中无效，请注意适用的版本！</p>
        * 
