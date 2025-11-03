@@ -33,7 +33,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * var effectCtrler = parent.$mc_ctrler.effectCtrler;
+var effectCtrler = parent.$mc_ctrler.effectCtrler;
        * </listing>
        */
       public var effectCtrler:FighterEffectCtrl;
@@ -47,7 +47,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * var mcCtrler = new FighterMcCtrler(fighter);
+var mcCtrler = new FighterMcCtrler(fighter);
        * </listing>
        */
       public function FighterMcCtrler(fighter:FighterMain) {}
@@ -69,28 +69,28 @@ package net.play5d.game.bvn.fighter.ctrler
        * @example 
        * 单独添加普攻（J）纽带
        * <listing version="3.0">
-       * parent.$mc_ctrler.getAction().attack = "砍1";
-       * // 效果同 parent.$mc_ctrler.setAttack("砍1");
+parent.$mc_ctrler.getAction().attack = "砍1";
+// 效果同 parent.$mc_ctrler.setAttack("砍1");
        * </listing>
        * 
        * 单独移除普攻（J）纽带
        * <listing version="3.0">
-       * parent.$mc_ctrler.getAction().attack = null;
+parent.$mc_ctrler.getAction().attack = null;
        * </listing>
        * 
        * 清空所有纽带
        * <listing version="3.0">
-       * parent.$mc_ctrler.getAction().clearAction();
+parent.$mc_ctrler.getAction().clearAction();
        * </listing>
        * 
        * 获取到变量中
        * <listing version="3.0">
-       * var action = parent.$mc_ctrler.getAction();
-       * 
-       * // 单独移除普攻（J）纽带
-       * action.attack = null;
-       * // 清空所有纽带
-       * action.clearAction();
+var action = parent.$mc_ctrler.getAction();
+
+// 单独移除普攻（J）纽带
+action.attack = null;
+// 清空所有纽带
+action.clearAction();
        * </listing>
        */
       public function getAction() : FighterAction {}
@@ -106,7 +106,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * var fighterMc = parent.$mc_ctrler.getFighterMc();
+var fighterMc = parent.$mc_ctrler.getFighterMc();
        * </listing>
        */
       public function getFighterMc() : FighterMC {}
@@ -122,7 +122,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * var curAction = parent.$mc_ctrler.getCurAction();
+var curAction = parent.$mc_ctrler.getCurAction();
        * </listing>
        */
       public function getCurAction() : String {}
@@ -142,7 +142,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * var actionCtrler = parent.$mc_ctrler.getActionCtrler();
+var actionCtrler = parent.$mc_ctrler.getActionCtrler();
        * </listing>
        */
       public function getActionCtrler() : IFighterActionCtrl {}
@@ -166,25 +166,25 @@ package net.play5d.game.bvn.fighter.ctrler
        * 设置P2玩家控制
        * 
        * <listing version="3.0">
-       * var keyCtrlClass = getDefinitionByName("net.play5d.game.bvn.fighter.ctrler::FighterKeyCtrl");
-       * var keyCtrl = new keyCtrlClass();
-       * keyCtrl.inputType = "P2";
-       * keyCtrl.classicMode = true;
-       * parent.$mc_ctrler.setActionCtrler(keyCtrl);
-       * keyCtrl.initlize();
+var keyCtrlClass = getDefinitionByName("net.play5d.game.bvn.fighter.ctrler::FighterKeyCtrl");
+var keyCtrl = new keyCtrlClass();
+keyCtrl.inputType = "P2";
+keyCtrl.classicMode = true;
+parent.$mc_ctrler.setActionCtrler(keyCtrl);
+keyCtrl.initlize();
        * </listing>
        * 
        * 设置AI控制
        * <p><b>注意：</b>这段代码可能无法直接运行，你需要将 $self_main 设置为实际的人物主体（FighterMain 对象）。获取方法见 FighterMain 类</p>
        * 
        * <listing version="3.0">
-       * var aiCtrlClass = getDefinitionByName("net.play5d.game.bvn.fighter.ctrler::FighterAICtrl");
-       * var aiCtrl = new aiCtrlClass();
-       * aiCtrl.AILevel = 6;
-       * // $self_main 是你的人物主体
-       * aiCtrl.fighter = $self_main;
-       * parent.$mc_ctrler.setActionCtrler(aiCtrl);
-       * aiCtrl.initlize();
+var aiCtrlClass = getDefinitionByName("net.play5d.game.bvn.fighter.ctrler::FighterAICtrl");
+var aiCtrl = new aiCtrlClass();
+aiCtrl.AILevel = 6;
+// $self_main 是你的人物主体
+aiCtrl.fighter = $self_main;
+parent.$mc_ctrler.setActionCtrler(aiCtrl);
+aiCtrl.initlize();
        * </listing>
        */
       public function setActionCtrler(v:IFighterActionCtrl) : void {}
@@ -203,17 +203,17 @@ package net.play5d.game.bvn.fighter.ctrler
        * @example
        * 开启霸体
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSteelBody(true);
+parent.$mc_ctrler.setSteelBody(true);
        * </listing>
        * 
        * 开启金霸
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSteelBody(true, true);
+parent.$mc_ctrler.setSteelBody(true, true);
        * </listing>
        * 
        * 关闭霸体
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSteelBody(false);
+parent.$mc_ctrler.setSteelBody(false);
        * </listing>
        */
       public function setSteelBody(v:Boolean, isSuper:Boolean = false) : void {}
@@ -229,7 +229,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.addQi(10);
+parent.$mc_ctrler.addQi(10);
        * </listing>
        */
       public function addQi(qi:Number) : void {}
@@ -245,7 +245,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.idle();
+parent.$mc_ctrler.idle();
        * </listing>
        */
       public function idle(frame:String = "站立") : void {}
@@ -259,7 +259,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example 跳转到招1循环帧
        * <listing version="3.0">
-       * parent.$mc_ctrler.loop("招1循环");
+parent.$mc_ctrler.loop("招1循环");
        * </listing>
        */
       public function loop(frame:String) : void {}
@@ -269,7 +269,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.stop();
+parent.$mc_ctrler.stop();
        * </listing>
        */
       public function stop() : void {}
@@ -291,7 +291,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.dash(3);
+parent.$mc_ctrler.dash(3);
        * </listing>
        */
       public function dash(speedPlus:Number = 3) : void {}
@@ -315,7 +315,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.dashStop(0.25);
+parent.$mc_ctrler.dashStop(0.25);
        * </listing>
        */
       public function dashStop(loseSpdPercent:Number = 0.5) : void {}
@@ -325,7 +325,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setAllAct();
+parent.$mc_ctrler.setAllAct();
        * </listing>
        */
       public function setAllAct() : void {}
@@ -335,7 +335,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setAirAllAct();
+parent.$mc_ctrler.setAirAllAct();
        * </listing>
        */
       public function setAirAllAct() : void {}
@@ -347,7 +347,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setAirMove(true);
+parent.$mc_ctrler.setAirMove(true);
        * </listing>
        */
       public function setAirMove(v:Boolean) : void {}
@@ -357,7 +357,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setMove();
+parent.$mc_ctrler.setMove();
        * </listing>
        */
       public function setMove() : void {}
@@ -367,7 +367,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setMoveLeft();
+parent.$mc_ctrler.setMoveLeft();
        * </listing>
        */
       public function setMoveLeft() : void {}
@@ -377,7 +377,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setMoveRight();
+parent.$mc_ctrler.setMoveRight();
        * </listing>
        */
       public function setMoveRight() : void {}
@@ -387,7 +387,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setDefense();
+parent.$mc_ctrler.setDefense();
        * </listing>
        */
       public function setDefense() : void {}
@@ -399,7 +399,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setJump();
+parent.$mc_ctrler.setJump();
        * </listing>
        */
       public function setJump(action:String = "跳") : void {}
@@ -413,7 +413,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setJumpQuick();
+parent.$mc_ctrler.setJumpQuick();
        * </listing>
        */
       public function setJumpQuick(action:String = "跳") : void {}
@@ -425,7 +425,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setJumpDown();
+parent.$mc_ctrler.setJumpDown();
        * </listing>
        */
       public function setJumpDown(action:String = "落") : void {}
@@ -437,7 +437,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setDash();
+parent.$mc_ctrler.setDash();
        * </listing>
        */
       public function setDash(action:String = "瞬步") : void {}
@@ -449,7 +449,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setAttack("砍1");
+parent.$mc_ctrler.setAttack("砍1");
        * </listing>
        */
       public function setAttack(action:String = "砍1") : void {}
@@ -463,7 +463,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSkill1();
+parent.$mc_ctrler.setSkill1();
        * </listing>
        */
       public function setSkill1(action:String = "砍技1") : void {}
@@ -477,7 +477,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSkill2();
+parent.$mc_ctrler.setSkill2();
        * </listing>
        */
       public function setSkill2(action:String = "砍技2") : void {}
@@ -491,7 +491,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setZhao1();
+parent.$mc_ctrler.setZhao1();
        * </listing>
        */
       public function setZhao1(action:String = "招1") : void {}
@@ -505,7 +505,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setZhao2();
+parent.$mc_ctrler.setZhao2();
        * </listing>
        */
       public function setZhao2(action:String = "招2") : void {}
@@ -519,7 +519,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setZhao3();
+parent.$mc_ctrler.setZhao3();
        * </listing>
        */
       public function setZhao3(action:String = "招3") : void {}
@@ -533,7 +533,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setCatch1();
+parent.$mc_ctrler.setCatch1();
        * </listing>
        */
       public function setCatch1(action:String = "摔1") : void {}
@@ -547,7 +547,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setCatch2();
+parent.$mc_ctrler.setCatch2();
        * </listing>
        */
       public function setCatch2(action:String = "摔2") : void {}
@@ -560,7 +560,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setBisha();
+parent.$mc_ctrler.setBisha();
        * </listing>
        */
       public function setBisha(action:String = "必杀", qi:int = 100) : void {}
@@ -575,7 +575,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setBishaUP();
+parent.$mc_ctrler.setBishaUP();
        * </listing>
        */
       public function setBishaUP(action:String = "上必杀", qi:int = 100) : void {}
@@ -590,7 +590,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setBishaSUPER();
+parent.$mc_ctrler.setBishaSUPER();
        * </listing>
        */
       public function setBishaSUPER(action:String = "超必杀", qi:int = 300) : void {}
@@ -602,7 +602,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setAttackAIR();
+parent.$mc_ctrler.setAttackAIR();
        * </listing>
        */
       public function setAttackAIR(action:String = "跳砍") : void {}
@@ -614,7 +614,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setSkillAIR();
+parent.$mc_ctrler.setSkillAIR();
        * </listing>
        */
       public function setSkillAIR(action:String = "跳招") : void {}
@@ -627,7 +627,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setBishaAIR();
+parent.$mc_ctrler.setBishaAIR();
        * </listing>
        */
       public function setBishaAIR(action:String = "空中必杀", qi:int = 100) : void {}
@@ -642,7 +642,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setTouchFloor();
+parent.$mc_ctrler.setTouchFloor();
        * </listing>
        */
       public function setTouchFloor(action:String = "落地", breakAct:Boolean = true) : void {}
@@ -658,7 +658,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setWankai();
+parent.$mc_ctrler.setWankai();
        * </listing>
        */
       public function setWankai() : void {}
@@ -677,7 +677,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.setHitTarget("zh1checker", "招1碰撞");
+parent.$mc_ctrler.setHitTarget("zh1checker", "招1碰撞");
        * </listing>
        */
       public function setHitTarget(checker:String, action:String) : void {}
@@ -697,13 +697,13 @@ package net.play5d.game.bvn.fighter.ctrler
        * @example
        * 设置当身
        * <listing version="3.0">
-       * parent.$mc_ctrler.setHurtAction("招1当身");
+parent.$mc_ctrler.setHurtAction("招1当身");
        * </listing>
        * 
        * 直接执行动作
        * <listing version="3.0">
-       * parent.$mc_ctrler.setHurtAction("残血强化");
-       * parent.$mc_ctrler.beHit(null);
+parent.$mc_ctrler.setHurtAction("残血强化");
+parent.$mc_ctrler.beHit(null);
        * </listing>
        */
       public function setHurtAction(action:String) : void {}
@@ -718,7 +718,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.move(50, 0);
+parent.$mc_ctrler.move(50, 0);
        * </listing>
        */
       public function move(x:Number = 0, y:Number = 0) : void {}
@@ -735,7 +735,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.movePercent(5, 0);
+parent.$mc_ctrler.movePercent(5, 0);
        * </listing>
        */
       public function movePercent(x:Number = 0, y:Number = 0) : void {}
@@ -749,7 +749,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.stopMove();
+parent.$mc_ctrler.stopMove();
        * </listing>
        */
       public function stopMove() : void {}
@@ -764,7 +764,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.damping(1, 0);
+parent.$mc_ctrler.damping(1, 0);
        * </listing>
        */
       public function damping(x:Number = 0, y:Number = 0) : void {}
@@ -781,7 +781,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.dampingPercent(0.1, 0);
+parent.$mc_ctrler.dampingPercent(0.1, 0);
        * </listing>
        */
       public function dampingPercent(x:Number = 0, y:Number = 0) : void {}
@@ -802,7 +802,7 @@ package net.play5d.game.bvn.fighter.ctrler
        * 
        * @example
        * <listing version="3.0">
-       * parent.$mc_ctrler.endAct();
+parent.$mc_ctrler.endAct();
        * </listing>
        */
       public function endAct() : void {}
